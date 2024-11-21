@@ -1,0 +1,108 @@
+.cardContainer {
+  margin-bottom: 50px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.cardContainer:hover {
+  cursor: pointer;
+}
+
+@keyframes subtle-shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes blur-effect {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.cardImg {
+  width: 90%;
+  height: auto;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+
+.cardContainer:hover .cardImg {
+  animation: subtle-shake 0.3s ease-in-out, blur-effect 1.5s ease forwards;
+  animation-iteration-count: 1;
+}
+
+.categoryContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0;
+}
+
+.categoryItemName {
+  margin: 20px 0px 0px 0px;
+  color: var(--color-text);
+}
+
+.categoryItemName::before {
+  content: "•";
+  color: var(--color-text);
+  margin-right: 8px;
+  font-size: 30px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0px;
+  height: auto;
+}
+
+.arrowIcon {
+  position: absolute;
+  align-self: center;
+  left: 0;
+  margin-right: 20px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s ease;
+  color: var(--color-text);
+  background-color: none;
+}
+
+.cardContainer:hover .arrowIcon {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+
+.cardHeading {
+  transition: margin-left 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin: 0px;
+}
+
+.headingMarginAnimation:hover .cardHeading {
+  margin-left: 30px;
+}

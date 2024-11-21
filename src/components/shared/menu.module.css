@@ -1,0 +1,172 @@
+.menuContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 100px 50px 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
+}
+
+.scrolled {
+  backdrop-filter: blur(50px);
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--color-bg-rgb), 1) 0%,
+    rgba(var(--color-bg-rgb), 0.9) 10%,
+    rgba(var(--color-bg-rgb), 0.7) 30%,
+    rgba(var(--color-bg-rgb), 0.5) 50%,
+    rgba(var(--color-bg-rgb), 0.3) 70%,
+    rgba(var(--color-bg-rgb), 0.1) 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    var(--color-bg) 0%,
+    var(--color-bg) 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    var(--color-bg) 0%,
+    var(--color-bg) 85%,
+    transparent 100%
+  );
+}
+
+.logoInfoContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.menuLogo a,
+.menuLogo p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.menuInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuInfo p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.menuInfo p:nth-child(1) {
+  margin-top: 10px;
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.toggleSwitch {
+  width: 50px;
+  height: 30px;
+  border: 2px solid var(--color-text);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  transition: border-color 0.3s ease;
+}
+
+.toggleCircle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.toggleSwitch.light .toggleCircle {
+  left: auto;
+  right: 5px;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .menuContainer {
+    padding: 20px;
+  }
+  .menuInfo {
+    display: none;
+  }
+
+  .menuList {
+    display: none;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .menuContainer {
+    padding: 20px;
+  }
+
+  .menuInfo {
+    display: none;
+  }
+
+  .menuList {
+    display: none;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+  .menuContainer {
+    padding: 20px;
+  }
+
+  .menuInfo {
+    display: none;
+  }
+
+  .menuList {
+    display: none;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .menuContainer {
+    padding: 20px 100px 50px 100px;
+  }
+
+  .menuInfo {
+    display: block;
+  }
+
+  .menuList {
+    display: flex;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,51 @@
+.aboutContainer {
+  display: flex;
+  margin: 100px 100px 100px 300px;
+  gap: 100px;
+}
+
+.aboutInfo {
+  flex: 60%;
+  flex: 1;
+}
+.aboutImg {
+  flex: 40%;
+  flex: 1;
+}
+
+.aboutImg img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.clientList li,
+.clientList ul {
+  color: var(--color-text);
+  text-decoration: none;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.clientList li {
+  border-bottom: 2px solid var(--color-text);
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .aboutContainer {
+    flex-direction: column;
+    margin: 30px;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .aboutContainer {
+    flex-direction: row;
+    margin: 100px 100px 100px 300px;
+  }
+}

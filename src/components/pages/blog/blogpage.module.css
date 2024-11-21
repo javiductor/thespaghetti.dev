@@ -1,0 +1,44 @@
+.Header {
+  margin: 0 100px;
+  padding: 0px;
+}
+
+.pageContainer {
+  margin: 0 auto;
+  padding: 50px 100px;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .blogGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .blogGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .Header {
+    margin: 0 30px;
+  }
+
+  .pageContainer {
+    margin: 0 auto;
+    padding: 0px 30px;
+  }
+}
+
+.blogGrid > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

@@ -1,0 +1,161 @@
+.serviceContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px;
+  padding: 50px 100px 100px 100px;
+  align-items: flex-start;
+  gap: 100px;
+}
+
+.withBorder {
+  border-bottom: 3px solid var(--color-text);
+}
+
+.withBorder:nth-child(3) {
+  border-bottom: none;
+}
+
+.serviceNumber {
+  display: flex;
+  flex: 30%;
+}
+
+.serviceNumber p {
+  font-size: 250px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin: 0;
+  padding: 0;
+}
+
+.serviceInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 70%;
+}
+
+.serviceHeading h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 0px;
+}
+
+.serviceDescription {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.serviceDescription p {
+  flex: 1;
+  margin: 0;
+  max-width: 50%;
+}
+
+.serviceList {
+  margin-top: 40px;
+}
+
+.serviceHeading2 h3 {
+  margin-bottom: 0px;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color-text);
+  padding: 20px 0;
+  gap: 100px;
+}
+
+.serviceItemNumber {
+  margin-right: 20px;
+  color: var(--color-text);
+}
+
+.serviceItemName {
+  margin-right: 0px;
+  color: var(--color-text);
+}
+
+.toolsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 50px; /* 20px vertical gap, 50px horizontal gap */
+  color: var(--color-text);
+  font-size: var(--h4-size);
+}
+
+.toolItem {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between circle and text */
+}
+
+.toolItem::before {
+  content: "";
+  min-width: 15px; /* Fixed width */
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-text);
+  border-radius: 50%;
+  display: block;
+}
+
+.toolItemName {
+  display: inline-block;
+}
+
+.hoveredImageContainer {
+  transform: translate(-0%, -50%);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  max-width: 500px;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.hoveredImage {
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+.serviceItem {
+  position: relative;
+  cursor: pointer;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .serviceContainer {
+    flex-direction: column;
+    padding: 50px 30px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .serviceContainer {
+    flex-direction: row;
+    padding: 50px 100px 100px 100px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+}

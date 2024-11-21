@@ -1,0 +1,156 @@
+/*
+------------------------------------------------------------------------
+| Typography
+------------------------------------------------------------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* Base values */
+  --font-size-base: 16px;
+  --font-primary: "Outfit", sans-serif;
+  --font-secondary: "Outfit", serif;
+
+  /* Colors */
+  --color-bg: #070707;
+  --color-text: #f0f1f6;
+  --color-bg-rgb: 7, 7, 7;
+
+  /* Font weights */
+  --font-thin: 200;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  /* Font sizes with clamp */
+  --h1-size: clamp(30px, 4vw + 10px, 60px);
+  --h2-size: clamp(32px, 3.8vw + 12px, 52px);
+  --h3-size: clamp(28px, 3.2vw + 8px, 40px);
+  --h4-size: clamp(20px, 2.7vw + 6px, 27px);
+  --h5-size: clamp(16px, 2vw + 4px, 18px);
+  --h6-size: clamp(14px, 1.7vw + 3px, 15px);
+  --p-size: 14px;
+
+  /* Line heights */
+  --h1-line-height: clamp(55px, 5vw + 15px, 85px);
+  --h2-line-height: clamp(45px, 4.8vw + 12px, 79px);
+  --h3-line-height: clamp(35px, 4vw + 8px, 47px);
+  --h4-line-height: clamp(28px, 3.7vw + 6px, 37px);
+  --h5-line-height: clamp(22px, 3vw + 4px, 27px);
+  --h6-line-height: clamp(18px, 2.3vw + 3px, 22px);
+  --p-line-height: 18px;
+  --a-line-height: 18px;
+
+  /* Letter spacing */
+  --spacing-h1: -0.04em;
+  --spacing-h2: -0.05em;
+  --spacing-h3: -0.05em;
+  --spacing-h4: -0.03em;
+  --spacing-h5: -0.05em;
+  --spacing-h6: -0.02em;
+  --spacing-none: 0px;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+:root {
+  font-size: var(--font-size-base);
+  font-family: var(--font-primary);
+}
+
+h1 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-thin);
+  font-size: var(--h1-size);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--spacing-h1);
+  color: var(--color-text);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-bold);
+  font-size: var(--h2-size);
+  line-height: var(--h2-line-height);
+  letter-spacing: var(--spacing-h2);
+  color: var(--color-text);
+}
+
+h3 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-medium);
+  font-size: var(--h3-size);
+  line-height: var(--h3-line-height);
+  letter-spacing: var(--spacing-h3);
+  color: var(--color-text);
+}
+
+h4 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-medium);
+  font-size: var(--h4-size);
+  line-height: var(--h4-line-height);
+  letter-spacing: var(--spacing-h4);
+  color: var(--color-text);
+}
+
+h5 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-medium);
+  font-size: var(--h5-size);
+  line-height: var(--h5-line-height);
+  letter-spacing: var(--spacing-h5);
+  color: var(--color-text);
+}
+
+h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-regular);
+  font-size: var(--h6-size);
+  line-height: var(--h6-line-height);
+  letter-spacing: var(--spacing-h6);
+  color: var(--color-text);
+}
+
+p,
+a {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-regular);
+  font-size: var(--p-size);
+  line-height: var(--p-line-height);
+  letter-spacing: var(--spacing-none);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#blob {
+  z-index: -1;
+  height: 10px;
+  aspect-ratio: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  background-color: var(--color-text);
+  cursor: grab;
+}
+
+#blob::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: var(--color-text);
+  filter: blur(20px);
+  transform: scale(0.8);
+  opacity: 0.4;
+}

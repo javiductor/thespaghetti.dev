@@ -1,0 +1,44 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4rem 0rem 2rem 0rem;
+  width: 100%;
+}
+
+.projectsRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.projectCard {
+  flex: 1;
+  min-width: 300px;
+  max-width: 625px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .projectsRow {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .projectCard {
+    min-width: 100%;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .projectsRow {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

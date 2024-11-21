@@ -1,0 +1,46 @@
+/* SmoothScroll.module.css */
+.scrollContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+.contentContainer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 0 100px;
+}
+
+.section {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.info {
+  display: flex;
+}
+
+.heroContent,
+.aboutContainer {
+  flex: 80%;
+  height: 40vh;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.laptopImage {
+  border-radius: 30px;
+  margin-right: 100px;
+}
+
+.ghost {
+  width: 100vw;
+}

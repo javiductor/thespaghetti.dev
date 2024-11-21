@@ -1,0 +1,45 @@
+.headerContainer {
+  display: flex;
+  margin: 100px;
+  margin: 100px;
+  gap: 100px;
+}
+
+.headerLeft {
+  flex: 60%;
+  flex: 1;
+  padding-top: 50px;
+}
+
+.headerRight {
+  flex: 40%;
+  flex: 1;
+  padding-top: 0px;
+}
+
+.headerRight img {
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.mainBtn {
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: var(--font-medium);
+  font-family: var(--font-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: var(--color-bg);
+  background-color: var(--color-text);
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+}

@@ -1,0 +1,72 @@
+.HeaderContainer {
+  display: flex;
+  gap: 100px;
+  margin: 50px 50px 100px 50px;
+}
+
+.HeaderLeft {
+  flex-direction: column;
+  flex: 1;
+}
+
+.HeaderHeading h1 {
+  font-weight: 700;
+  /* margin-bottom: 15px; */
+}
+
+.HeaderInfo {
+  display: flex;
+  gap: 100px;
+}
+
+.HeaderDescription {
+  flex: 75%;
+}
+
+.HeaderList {
+  flex: 25%;
+}
+
+.HeaderList h4 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.ListItemName {
+  color: var(--color-text);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.HeaderRight {
+  flex: 1;
+}
+
+.HeaderImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.Button {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 40px 20px 20px;
+  margin-top: 40px;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.Dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+  margin-right: 30px;
+}

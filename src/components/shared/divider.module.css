@@ -1,0 +1,17 @@
+.dividerContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 50px;
+}
+
+.dividerHeading {
+  white-space: nowrap;
+  margin: 0;
+}
+
+.dividerLine {
+  flex-grow: 1;
+  height: 3px;
+  background-color: var(--color-text);
+}

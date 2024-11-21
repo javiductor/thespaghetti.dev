@@ -1,0 +1,149 @@
+.headerContainer {
+  position: relative;
+  margin: 20px 50px;
+  margin-bottom: 2rem;
+}
+
+.headerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.categoryContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category {
+  padding: 0.75rem 3rem;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  border: none;
+  background-color: none;
+  color: var(--color-text);
+  border: 2px solid rgb(from var(--color-text) r g b / 0.5);
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+
+.contentContainer {
+  position: relative;
+  display: flex;
+  margin: 50px;
+  margin-bottom: 2rem;
+  gap: 50px;
+}
+
+.content {
+  flex: 60%;
+  margin: 0px 50px;
+}
+
+.content h2,
+.content h3,
+.content h4 {
+  margin: 0px;
+}
+
+.authorContainer {
+  position: sticky;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+  gap: 30px;
+  margin-top: 0px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.authorContainerInfo {
+  border-top: 2px solid var(--color-text);
+  border-bottom: 2px solid var(--color-text);
+  display: flex;
+  padding: 30px 0px 30px 0px;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.authorInfo h5,
+.authorInfo p {
+  margin: 0px;
+}
+
+.authorImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin: 50px 0px;
+}
+
+.text p,
+.description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.description {
+  width: 80%;
+  margin: 0px 0px 30px 0px;
+  line-height: 30px;
+}
+
+.authorRole {
+  padding-bottom: 20px;
+}
+
+.titleFirst {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.titleSecond {
+  display: block;
+  margin-bottom: 0px;
+  font-size: var(--h2-size);
+}
+
+.headerLink {
+  margin-bottom: 30px;
+}
+
+.headerLink a {
+  font-size: var(--h4-size);
+}
+
+.headerLink a:hover {
+  text-decoration: underline;
+}

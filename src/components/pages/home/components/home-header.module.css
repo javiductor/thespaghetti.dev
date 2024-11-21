@@ -1,0 +1,67 @@
+.headerContainer {
+  display: flex;
+  padding: 150px 100px;
+}
+
+.homeContainer h1 {
+  margin: 0;
+}
+
+.headerLink {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  font-size: clamp(35px, 4vw + 15px, 55px);
+  border-radius: 50px;
+  padding: 0px 10px 5px 10px;
+}
+
+.imageContainer {
+  transform: translateX(-50%) translateY(-10%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hoveredImage {
+  width: 420px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .headerContainer {
+    padding: 100px 30px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .headerContainer {
+    padding: 100px 30px;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 768px) {
+  .headerContainer {
+    padding: 100px 30px;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .headerContainer {
+    padding: 150px 100px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
+}

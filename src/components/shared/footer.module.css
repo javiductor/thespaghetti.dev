@@ -1,0 +1,59 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 50px;
+  padding: 50px;
+  border-top: 3px solid var(--color-text);
+}
+
+.footerLogo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: flex-end;
+  gap: 150px;
+}
+
+.footerList {
+  padding-top: 50px;
+}
+
+.footerList p {
+  line-height: 10px;
+}
+
+.footerMenu {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .footerContainer {
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+  }
+}
+
+/* Large (lg) small laptops */
+@media (min-width: 992px) {
+  .footerContainer {
+    flex-direction: row;
+    margin: 0px 50px;
+  }
+
+  .footerLinks {
+    flex-direction: row;
+  }
+}
