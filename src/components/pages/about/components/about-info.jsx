@@ -52,8 +52,11 @@ const AboutInfo = () => {
           { name: "Next JS" },
           { name: "InDesign" },
           { name: "SEO" },
-          { name: "DIVI" },
+          { name: "DIVI Builder" },
           { name: "Adobe XD" },
+          { name: "Adobe Illustrator" },
+          { name: "Adobe Photoshop" },
+          { name: "Adobe InDesign" },
         ]}
       />
     </div>

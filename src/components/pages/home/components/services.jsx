@@ -19,20 +19,21 @@ const Services = () => {
             name: "HTML",
             image: "/src/assets/Portfolio/TTHC.webp",
           },
+
           {
             number: "(02)",
             name: "CSS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/enferm.webp",
           },
           {
             number: "(03)",
             name: "Vanilla JavaScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
             name: "React JS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/NovaFlip.webp",
           },
           {
             number: "(05)",
@@ -53,8 +54,9 @@ const Services = () => {
           {
             number: "(01)",
             name: "HTML",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/enferm.webp",
           },
+
           {
             number: "(02)",
             name: "CSS",
@@ -63,12 +65,12 @@ const Services = () => {
           {
             number: "(03)",
             name: "Vanilla JavaScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
             name: "React JS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/src/assets/Portfolio/NovaFlip.webp",
           },
           {
             number: "(05)",

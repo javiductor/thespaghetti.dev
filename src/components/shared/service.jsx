@@ -18,14 +18,18 @@ const Service = ({
   });
 
   const handleMouseEnter = (service, event) => {
-    const { clientX, clientY } = event;
-    const containerRect = event.currentTarget.getBoundingClientRect();
+    // Find the closest parent serviceContainer
+    const container = event.currentTarget.closest(
+      `.${styles.serviceContainer}`
+    );
+    const serviceNumber = container.querySelector(`.${styles.serviceNumber}`);
+    const rect = serviceNumber.getBoundingClientRect();
 
     setHovered({
       image: service.image,
       position: {
-        top: containerRect.top + window.scrollY,
-        left: containerRect.left + containerRect.width / 2,
+        top: rect.bottom + window.scrollY,
+        left: rect.left + rect.width / 2,
       },
     });
   };
@@ -75,6 +79,7 @@ const Service = ({
               top: hovered.position.top,
               left: hovered.position.left,
               position: "absolute",
+              transform: "translateX(-50%)", // Center the image under the service number
             }}
           >
             <img
