@@ -1,7 +1,7 @@
 .menuContainer {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px 100px 50px 100px;
   position: sticky;
   top: 0;
@@ -63,12 +63,36 @@
   margin-top: 10px;
 }
 
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .menuList {
   list-style: none;
   display: flex;
   gap: 5rem;
-  margin-left: auto;
-  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.menuList li {
+  display: flex;
+  align-items: center;
+}
+
+.menuList li a {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.menuList li a:hover {
+  opacity: 0.7;
 }
 
 .toggleSwitch {
@@ -80,12 +104,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2rem;
-  margin-top: 10px;
   cursor: pointer;
   padding: 0;
   background: none;
   transition: border-color 0.3s ease;
+  margin: 0;
 }
 
 .toggleCircle {
@@ -103,12 +126,67 @@
   right: 5px;
 }
 
-/* -------------- Media Queries ---------------------- */
-/* Extra small (xs) */
-@media (max-width: 575.98px) {
+.burgerMenu {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+  z-index: 101;
+  margin-right: 30px;
+}
+
+.burgerMenu:focus {
+  outline: none;
+}
+
+.burgerContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burgerBar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.topBar {
+  transform: translateY(-8px);
+}
+
+.bottomBar {
+  transform: translateY(8px);
+}
+
+.burgerMenu.open .topBar {
+  transform: rotate(45deg) translateY(0);
+}
+
+.burgerMenu.open .middleBar {
+  opacity: 0;
+}
+
+.burgerMenu.open .bottomBar {
+  transform: rotate(-45deg) translateY(0);
+}
+
+/* ---------------- Media Queries ---------------- */
+
+@media (max-width: 1300px) {
   .menuContainer {
     padding: 20px;
+    align-items: flex-start;
   }
+
   .menuInfo {
     display: none;
   }
@@ -116,57 +194,95 @@
   .menuList {
     display: none;
   }
-}
 
-/* - most phones & small ipads*/
-@media (min-width: 576px) {
-  .menuContainer {
-    padding: 20px;
+  .navigation.navOpen {
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    padding-top: 50px;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .menuInfo {
+  .menuList.menuOpen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 40px;
+    animation: slideIn 0.3s ease-out forwards;
+  }
+
+  .menuList.menuOpen li a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .toggleItem {
+    margin-top: 1rem;
+  }
+
+  .toggleItem .toggleSwitch {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .menuContainer > .toggleSwitch {
     display: none;
   }
 
-  .menuList {
-    display: none;
-  }
-}
-
-/*  - large phones */
-@media (min-width: 768px) {
-  .menuContainer {
-    padding: 20px;
+  .menuList.menuOpen li {
+    opacity: 0;
+    animation: fadeIn 0.3s ease-out forwards;
   }
 
-  .menuInfo {
-    display: none;
+  .menuList.menuOpen li:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .menuList.menuOpen li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .menuList.menuOpen li:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .menuList.menuOpen li:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .menuList.menuOpen li:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .menuList.menuOpen li:nth-child(6) {
+    animation-delay: 0.6s;
   }
 
-  .menuList {
-    display: none;
-  }
-}
-
-/* Large (lg) small laptops */
-@media (min-width: 992px) {
-  .menuContainer {
-    padding: 20px 100px 50px 100px;
-  }
-
-  .menuInfo {
+  .burgerMenu {
     display: block;
   }
+}
 
-  .menuList {
-    display: flex;
+/* ---------------- Tablet Media Query ---------------- */
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 
-/* Extra large (xl) */
-@media (min-width: 1200px) {
-}
-
-/* Extra extra large (xxl) */
-@media (min-width: 1400px) {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

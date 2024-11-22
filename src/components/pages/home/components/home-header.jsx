@@ -92,8 +92,7 @@ function HomeHeader() {
               spaghetti code
             </a>
             <br />
-            to mastering front-end development, as I <br />
-            tackle{" "}
+            to mastering front-end development, as I tackle <br />
             <a
               href="/work"
               className={styles.headerLink}
