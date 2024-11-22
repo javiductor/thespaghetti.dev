@@ -9,7 +9,6 @@ function HomeHeader() {
   });
   const [intervalId, setIntervalId] = useState(null);
 
-  // Function for handling mouse enter on the "exciting projects" link
   const handleMouseEnterExcitingProjects = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
@@ -40,12 +39,11 @@ function HomeHeader() {
     setIntervalId(id);
   };
 
-  // Function for handling mouse enter on the "spaghetti code" link
   const handleMouseEnterSpaghettiCode = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
-      "/src/assets/spaghetti/code-1.png",
-      "/src/assets/spaghetti/code-2.png",
+      "/src/assets/spaghetti/home-code.webp",
+      "/src/assets/spaghetti/home-code-1.webp",
     ];
 
     setHovered({

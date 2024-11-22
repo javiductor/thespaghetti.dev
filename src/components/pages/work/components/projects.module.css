@@ -41,6 +41,9 @@
 
 /* For very small screens */
 @media (max-width: 480px) {
+  .headerContainer {
+    margin: 2rem 2rem 0rem 2rem;
+  }
   .container {
     padding: 0 0.5rem;
   }

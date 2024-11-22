@@ -9,10 +9,8 @@ const Services = () => {
         withBorder={true}
         number="01"
         heading="WEB DEVELOPMENT"
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-        With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
+        description1="I specialise in building high-performance website with component based architectures. My development approach prioritises clean code and efficient functionality without compromising on the beautiful design."
+        description2="I create responsive solutions that can handle complex logic while still maintaining fast load times and seamless user interactions. "
         services={[
           {
             number: "(01)",
