@@ -3,7 +3,6 @@ import { createDirectus, rest, readItems } from "@directus/sdk";
 import { useParams } from "react-router-dom";
 import styles from "./individual-blog.module.css";
 import CodeDisplay from "./code-display";
-// import Card from "../../../shared/card";
 import LoadingSpinner from "./LoadingSpinner.jsx";
 import SocialMediaIcons from "../../../shared/social-media-icons";
 
