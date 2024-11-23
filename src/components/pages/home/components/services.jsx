@@ -15,28 +15,28 @@ const Services = () => {
           {
             number: "(01)",
             name: "HTML",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
 
           {
             number: "(02)",
             name: "CSS",
-            image: "/src/assets/Portfolio/enferm.webp",
+            image: "/assets/Portfolio/enferm.webp",
           },
           {
             number: "(03)",
             name: "Vanilla JavaScript",
-            image: "/src/assets/Portfolio/mrp.webp",
+            image: "/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
             name: "React JS",
-            image: "/src/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/NovaFlip.webp",
           },
           {
             number: "(05)",
             name: "TypeScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
         ]}
       />
@@ -52,28 +52,28 @@ const Services = () => {
           {
             number: "(01)",
             name: "HTML",
-            image: "/src/assets/Portfolio/enferm.webp",
+            image: "/assets/Portfolio/enferm.webp",
           },
 
           {
             number: "(02)",
             name: "CSS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(03)",
             name: "Vanilla JavaScript",
-            image: "/src/assets/Portfolio/mrp.webp",
+            image: "/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
             name: "React JS",
-            image: "/src/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/NovaFlip.webp",
           },
           {
             number: "(05)",
             name: "TypeScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
         ]}
       />
@@ -89,27 +89,27 @@ const Services = () => {
           {
             number: "(01)",
             name: "HTML",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(02)",
             name: "CSS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(03)",
             name: "Vanilla JavaScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(04)",
             name: "React JS",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(05)",
             name: "TypeScript",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
           },
         ]}
       />

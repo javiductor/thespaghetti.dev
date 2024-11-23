@@ -15,31 +15,31 @@ const AboutInfo = () => {
           {
             number: "(01)",
             name: "Henley Spanish Centre",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
             position: { top: "100", left: "300" },
           },
           {
             number: "(02)",
             name: "mrp",
-            image: "/src/assets/Portfolio/enferm.webp",
+            image: "/assets/Portfolio/enferm.webp",
             position: { top: "200", left: "500" },
           },
           {
             number: "(03)",
             name: "Torres Heights",
-            image: "/src/assets/Portfolio/mrp.webp",
+            image: "/assets/Portfolio/mrp.webp",
             position: { top: "300", left: "700" },
           },
           {
             number: "(04)",
             name: "enferm.io",
-            image: "/src/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/NovaFlip.webp",
             position: { top: "400", left: "200" },
           },
           {
             number: "(05)",
             name: "NovaFlip",
-            image: "/src/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/TTHC.webp",
             position: { top: "500", left: "400" },
           },
         ]}

@@ -17,7 +17,7 @@ const AboutHeader = () => {
           </button>{" "}
         </div>
         <div className={styles.headerRight}>
-          <img src="/src/assets/Javi.webp" alt="personal-headshot" />
+          <img src="/assets/Javi.webp" alt="personal-headshot" />
         </div>
       </div>
     </>

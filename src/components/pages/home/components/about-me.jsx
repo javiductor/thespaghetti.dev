@@ -24,7 +24,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.aboutImg}>
-          <img src="/src/assets/Javi.webp" alt="personal-picture" />
+          <img src="/assets/Javi.webp" alt="personal-picture" />
         </div>
       </div>
     </>

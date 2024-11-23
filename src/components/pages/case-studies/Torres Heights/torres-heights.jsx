@@ -6,10 +6,10 @@ import ImageContentBlock from "../components/CaseStudy-Images";
 
 const TorresHeights = () => {
   const imgData = [
-    { src: "/src/assets/Portfolio/TTHC.webp", alt: "Image 1" },
-    { src: "/src/assets/Portfolio/TTHC.webp", alt: "Image 2" },
-    { src: "/src/assets/Portfolio/TTHC.webp", alt: "Image 3" },
-    { src: "/src/assets/Portfolio/TTHC.webp", alt: "Image 4" },
+    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 1" },
+    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 2" },
+    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 3" },
+    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 4" },
   ];
 
   return (
@@ -26,7 +26,7 @@ const TorresHeights = () => {
           { name: "Branding" },
           { name: "Web Development" },
         ]}
-        imgSrc={"/src/assets/Portfolio/TTHC.webp"}
+        imgSrc={"/assets/Portfolio/TTHC.webp"}
         imgAlt={"Torres Heights Mockup"}
         button="https://www.henelyspanishcentre.co.uk"
       />

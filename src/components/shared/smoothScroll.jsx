@@ -73,7 +73,7 @@ const SmoothScroll = () => {
             </div>
             <div className={styles.imageContainer}>
               <img
-                src="/src/assets/Portfolio/TTHC.webp"
+                src="/assets/Portfolio/TTHC.webp"
                 alt="Website mockup"
                 className={styles.laptopImage}
               />
@@ -82,7 +82,7 @@ const SmoothScroll = () => {
           <div className={styles.section}>
             <div className={styles.imageContainer}>
               <img
-                src="/src/assets/Portfolio/TTHC.webp"
+                src="/assets/Portfolio/TTHC.webp"
                 alt="Website mockup"
                 className={styles.laptopImage}
               />

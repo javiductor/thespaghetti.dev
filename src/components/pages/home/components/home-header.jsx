@@ -12,13 +12,13 @@ function HomeHeader() {
   const handleMouseEnterExcitingProjects = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
-      "/src/assets/Portfolio/TTHC/TTHC-1.webp",
-      "/src/assets/Portfolio/mrp/mrp-1.webp",
-      "/src/assets/Portfolio/TTHC/TTHC-2.webp",
-      "/src/assets/Portfolio/mrp/mrp-2.webp",
-      "/src/assets/Portfolio/mrp/mrp-3.webp",
-      "/src/assets/Portfolio/HSC/hsc-1.webp",
-      "/src/assets/Portfolio/HSC/hsc-2.webp",
+      "/assets/Portfolio/TTHC/TTHC-1.webp",
+      "/assets/Portfolio/mrp/mrp-1.webp",
+      "/assets/Portfolio/TTHC/TTHC-2.webp",
+      "/assets/Portfolio/mrp/mrp-2.webp",
+      "/assets/Portfolio/mrp/mrp-3.webp",
+      "/assets/Portfolio/HSC/hsc-1.webp",
+      "/assets/Portfolio/HSC/hsc-2.webp",
     ];
 
     setHovered({
@@ -42,8 +42,8 @@ function HomeHeader() {
   const handleMouseEnterSpaghettiCode = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
-      "/src/assets/spaghetti/home-code.webp",
-      "/src/assets/spaghetti/home-code-1.webp",
+      "/assets/spaghetti/home-code.webp",
+      "/assets/spaghetti/home-code-1.webp",
     ];
 
     setHovered({
