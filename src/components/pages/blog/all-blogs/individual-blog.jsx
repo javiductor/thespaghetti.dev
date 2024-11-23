@@ -3,7 +3,6 @@ import { createDirectus, rest, readItems } from "@directus/sdk";
 import { useParams } from "react-router-dom";
 import styles from "./individual-blog.module.css";
 import CodeDisplay from "./code-display";
-import LoadingSpinner from "./LoadingSpinner.jsx";
 import SocialMediaIcons from "../../../shared/social-media-icons";
 
 const directus = createDirectus("https://api.theatomlab.co.uk").with(rest());
@@ -11,16 +10,12 @@ const directus = createDirectus("https://api.theatomlab.co.uk").with(rest());
 const BlogContent = () => {
   const [blog, setBlog] = useState(null);
   const [contentBlocks, setContentBlocks] = useState([]);
-  //   const [relatedPosts, setRelatedPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [relatedLoading, setRelatedLoading] = useState(true);
   const [error, setError] = useState(null);
   const { slug } = useParams();
 
   useEffect(() => {
     const fetchBlogContent = async () => {
       try {
-        setLoading(true);
         setError(null);
 
         const blogResponse = await directus.request(
@@ -49,10 +44,6 @@ const BlogContent = () => {
           setContentBlocks(contentBlocksResponse);
         }
 
-        setLoading(false);
-
-        // Fetch related posts separately
-        setRelatedLoading(true);
         const relatedResponse = await directus.request(
           readItems("BlogPost", {
             filter: {
@@ -66,12 +57,9 @@ const BlogContent = () => {
         if (Array.isArray(relatedResponse)) {
           setRelatedPosts(relatedResponse);
         }
-        setRelatedLoading(false);
       } catch (error) {
         console.error("Error fetching blog content:", error);
         setError(error.message);
-        setLoading(false);
-        setRelatedLoading(false);
       }
     };
 
@@ -138,10 +126,6 @@ const BlogContent = () => {
         <p>{error}</p>
       </div>
     );
-  }
-
-  if (loading) {
-    return <LoadingSpinner />;
   }
 
   if (!blog) {
