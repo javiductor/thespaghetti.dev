@@ -39,6 +39,7 @@
   .aboutContainer {
     flex-direction: column;
     margin: 30px;
+    gap: 50px;
   }
 }
 
@@ -47,6 +48,7 @@
   .aboutContainer {
     flex-direction: column;
     margin: 30px;
+    gap: 50px;
   }
 }
 
@@ -55,6 +57,7 @@
   .aboutContainer {
     flex-direction: row;
     margin: 100px 100px 100px 300px;
+    gap: 100px;
   }
 }
 

@@ -24,3 +24,32 @@
   transform: scale(0.8);
   opacity: 0.4;
 }
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .blob {
+    display: none;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .blob {
+    display: none;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 800px) {
+  .blob {
+    display: none;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .blob {
+    display: block;
+  }
+}
