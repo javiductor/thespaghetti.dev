@@ -1,6 +1,7 @@
 import Menu from "./components/shared/menu.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/shared/theme-context.jsx";
+import CursorBlob from "./components/shared/CursorBlob.jsx";
 
 import "./App.css";
 import "./index.css";
@@ -21,6 +22,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider>
         <div className="app">
+          <CursorBlob />
           <Menu />
           <ScrollToTop />
           <Routes>
