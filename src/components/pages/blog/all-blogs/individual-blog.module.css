@@ -1,7 +1,6 @@
 .headerContainer {
   position: relative;
   margin: 20px 50px;
-  margin-bottom: 2rem;
 }
 
 .headerImage {
@@ -15,15 +14,19 @@
   bottom: 0;
   left: 0;
   right: 0;
-  top: 100;
+  top: 0;
   padding: 2rem;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .categoryContainer {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .category {
@@ -44,7 +47,7 @@
 .contentContainer {
   position: relative;
   display: flex;
-  margin: 50px;
+  margin: 100px 50px;
   margin-bottom: 2rem;
   gap: 50px;
 }
@@ -76,7 +79,7 @@
   border-top: 2px solid var(--color-text);
   border-bottom: 2px solid var(--color-text);
   display: flex;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px;
 }
 
 .authorInfo {
@@ -146,4 +149,154 @@
 
 .headerLink a:hover {
   text-decoration: underline;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Base mobile styles (up to 575.98px) */
+@media (max-width: 575.98px) {
+  .headerContainer {
+    margin: 80px 15px 20px 15px;
+    width: calc(100% - 30px);
+    height: 400px;
+  }
+
+  .headerImage {
+    height: 425px;
+  }
+
+  .overlay {
+    position: absolute;
+    padding: 1.5rem;
+    height: 100%;
+  }
+
+  .contentContainer {
+    margin: 50px 15px;
+    flex-direction: column;
+    gap: 30px;
+    width: calc(100% - 30px);
+  }
+
+  .content {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .category {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .image {
+    margin: 30px 0px;
+  }
+
+  .authorContainer {
+    position: static;
+    display: block;
+    max-height: none;
+    overflow: visible;
+    margin-top: 30px;
+  }
+
+  .title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 2rem;
+  }
+
+  .titleFirst {
+    line-height: 35px;
+    max-width: 100%;
+  }
+
+  .titleSecond {
+    font-size: calc(var(--h2-size) * 0.8);
+    max-width: 100%;
+    line-height: 24px;
+  }
+
+  .headerLinks {
+    display: none;
+  }
+}
+
+/* Tablet styles (576px to 899px) */
+@media (min-width: 576px) and (max-width: 899px) {
+  .headerContainer {
+    margin: 80px 30px 20px 30px;
+    width: calc(100% - 60px);
+  }
+
+  .headerImage {
+    height: 500px;
+  }
+
+  .contentContainer {
+    margin: 30px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .authorContainer {
+    position: static;
+    display: block;
+    max-height: none;
+    overflow: visible;
+    margin-top: 30px;
+  }
+
+  .description {
+    width: 90%;
+  }
+
+  .headerLinks {
+    display: none;
+  }
+}
+
+/* Large tablet to small desktop (900px to 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .headerContainer {
+    margin: 20px 40px;
+  }
+
+  .contentContainer {
+    margin: 40px;
+    gap: 30px;
+  }
+
+  .content {
+    margin: 0 30px;
+  }
+
+  .authorContainer {
+    display: none;
+  }
+}
+
+/* Desktop (1200px and above) */
+@media (min-width: 1200px) {
+  .authorContainer {
+    display: block;
+  }
+
+  .headerImage {
+    height: auto;
+  }
 }

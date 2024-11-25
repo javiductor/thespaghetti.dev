@@ -137,6 +137,10 @@
 /* -------------- Media Queries ---------------------- */
 /* Extra small (xs) */
 @media (max-width: 575.98px) {
+  .hoveredImageContainer {
+    display: none;
+  }
+
   .serviceContainer {
     display: block;
     padding: 30px 30px;
@@ -159,6 +163,10 @@
 
 /* - most phones & small ipads*/
 @media (min-width: 576px) {
+  .hoveredImageContainer {
+    display: none;
+  }
+
   .serviceContainer {
     display: block;
     padding: 30px 30px;
@@ -181,6 +189,9 @@
 
 /*  - large phones */
 @media (min-width: 900px) {
+  .hoveredImageContainer {
+    display: none;
+  }
   .serviceContainer {
     display: flex;
     flex-direction: column;
@@ -205,6 +216,10 @@
 
 /* Extra large (xl) */
 @media (min-width: 1200px) {
+  .hoveredImageContainer {
+    display: block;
+  }
+
   .serviceContainer {
     flex-direction: row;
     margin: 50px;
