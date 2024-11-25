@@ -27,29 +27,26 @@
   max-width: 600px;
 }
 
-/* Responsive breakpoints */
-@media (max-width: 768px) {
-  .projectsRow {
-    gap: 1rem;
-    flex-direction: column;
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .headerContainer {
+    margin: 1rem;
   }
-
-  .projectCard {
-    min-width: 100%;
+  .projectsRow {
+    margin-left: 1rem;
+    margin-right: 1rem 1rem 0rem 1rem;
   }
 }
 
-/* For very small screens */
-@media (max-width: 480px) {
-  .headerContainer {
-    margin: 2rem 2rem 0rem 2rem;
-  }
-  .container {
-    padding: 0 0.5rem;
-  }
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+}
 
-  .projectsRow {
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+/*  - large phones */
+@media (min-width: 800px) {
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
 }

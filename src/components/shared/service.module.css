@@ -7,6 +7,10 @@
   gap: 100px;
 }
 
+.serviceContainer:nth-child(3) {
+  margin-bottom: 50px;
+}
+
 .withBorder {
   border-bottom: 3px solid var(--color-text);
 }
@@ -134,9 +138,14 @@
 /* Extra small (xs) */
 @media (max-width: 575.98px) {
   .serviceContainer {
-    flex-direction: column;
-    padding: 50px 30px;
+    display: block;
+    padding: 30px 30px;
     margin: 0px;
+  }
+
+  .serviceNumber p {
+    font-size: 150px;
+    margin-bottom: 50px;
   }
 
   .serviceDescription {
@@ -151,9 +160,14 @@
 /* - most phones & small ipads*/
 @media (min-width: 576px) {
   .serviceContainer {
-    flex-direction: column;
-    padding: 50px 30px;
+    display: block;
+    padding: 30px 30px;
     margin: 0px;
+  }
+
+  .serviceNumber p {
+    font-size: 150px;
+    margin-bottom: 50px;
   }
 
   .serviceDescription {
@@ -166,11 +180,18 @@
 }
 
 /*  - large phones */
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .serviceContainer {
+    display: flex;
     flex-direction: column;
-    padding: 50px 30px;
+    padding: 30px 30px;
     margin: 0px;
+    margin-top: 30px;
+  }
+
+  .serviceNumber p {
+    font-size: 150px;
+    margin-bottom: 0px;
   }
 
   .serviceDescription {
@@ -188,5 +209,10 @@
     flex-direction: row;
     margin: 50px;
     padding: 50px 100px 100px 100px;
+  }
+
+  .serviceNumber p {
+    font-size: 250px;
+    margin-bottom: 0px;
   }
 }

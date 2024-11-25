@@ -33,6 +33,10 @@
 /* -------------- Media Queries ---------------------- */
 /* Extra small (xs) */
 @media (max-width: 575.98px) {
+  .imageContainer {
+    display: none;
+  }
+
   .headerContainer {
     padding: 100px 10px;
   }
@@ -40,6 +44,10 @@
 
 /* - most phones & small ipads*/
 @media (min-width: 576px) {
+  .imageContainer {
+    display: none;
+  }
+
   .headerContainer {
     padding: 100px 10px;
   }
@@ -47,6 +55,10 @@
 
 /*  - large phones */
 @media (min-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+
   .headerContainer {
     padding: 100px 30px;
   }
@@ -58,6 +70,10 @@
 
 /* Large (lg) small laptops */
 @media (min-width: 992px) {
+  .imageContainer {
+    display: none;
+  }
+
   .headerContainer {
     padding: 150px 50px;
   }
@@ -69,6 +85,10 @@
 
 /* Extra large (xl) */
 @media (min-width: 1200px) {
+  .imageContainer {
+    display: block;
+  }
+
   .headerContainer {
     padding: 150px 100px;
   }

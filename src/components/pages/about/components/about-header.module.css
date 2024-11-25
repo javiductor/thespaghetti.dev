@@ -1,7 +1,6 @@
 .headerContainer {
   display: flex;
   margin: 100px;
-  margin: 100px;
   gap: 100px;
 }
 
@@ -42,4 +41,41 @@
   height: 10px;
   background-color: var(--color-bg);
   border-radius: 50%;
+}
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .headerContainer {
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 700px) {
+  .headerContainer {
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 800px) {
+  .headerContainer {
+    flex-direction: column;
+    margin: 0px 20px 50px 20px;
+    gap: 30px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .headerContainer {
+    flex-direction: row;
+    margin: 100px;
+    gap: 100px;
+  }
 }

@@ -5,37 +5,37 @@ import styles from "./projects.module.css";
 const Projects = () => {
   const projects = [
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Torres Heights Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Henley Spanish Centre",
     },
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "The Spaghetti Dev Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Thespaghetti.dev",
     },
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Three",
       category: ["Web Design", "Branding & Vision"],
       heading: "mrp",
     },
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Four",
       category: ["Web Design", "Branding & Vision"],
       heading: "The Torres Heights",
     },
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Four",
       category: ["Web Design", "Branding & Vision"],
       heading: "enferm.io",
     },
     {
-      thumbImageSrc: "/assets/portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Four",
       category: ["Web Design", "Branding & Vision"],
       heading: "NovaFlip",
