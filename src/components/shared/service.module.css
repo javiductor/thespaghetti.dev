@@ -136,29 +136,57 @@
   .serviceContainer {
     flex-direction: column;
     padding: 50px 30px;
+    margin: 0px;
+  }
+
+  .serviceDescription {
+    flex-direction: column;
+  }
+
+  .serviceDescription p {
+    max-width: 100%;
   }
 }
 
 /* - most phones & small ipads*/
 @media (min-width: 576px) {
+  .serviceContainer {
+    flex-direction: column;
+    padding: 50px 30px;
+    margin: 0px;
+  }
+
+  .serviceDescription {
+    flex-direction: column;
+  }
+
+  .serviceDescription p {
+    max-width: 100%;
+  }
 }
 
 /*  - large phones */
-@media (min-width: 768px) {
-}
-
-/* Large (lg) small laptops */
-@media (min-width: 992px) {
+@media (min-width: 800px) {
   .serviceContainer {
+    flex-direction: column;
+    padding: 50px 30px;
+    margin: 0px;
+  }
+
+  .serviceDescription {
     flex-direction: row;
-    padding: 50px 100px 100px 100px;
+  }
+
+  .serviceDescription p {
+    max-width: 100%;
   }
 }
 
 /* Extra large (xl) */
 @media (min-width: 1200px) {
-}
-
-/* Extra extra large (xxl) */
-@media (min-width: 1400px) {
+  .serviceContainer {
+    flex-direction: row;
+    margin: 50px;
+    padding: 50px 100px 100px 100px;
+  }
 }

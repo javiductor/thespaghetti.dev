@@ -42,10 +42,26 @@
   }
 }
 
+/*  - large phones */
+@media (max-width: 1100px) {
+  .aboutContainer {
+    flex-direction: column;
+    margin: 30px;
+  }
+}
+
 /* Large (lg) small laptops */
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
   .aboutContainer {
     flex-direction: row;
     margin: 100px 100px 100px 300px;
   }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large (xxl) */
+@media (min-width: 1400px) {
 }

@@ -82,7 +82,7 @@ function HomeHeader() {
         <div className={styles.headerContainer}>
           <h1>
             Hi there, my name is Javier!
-            <br /> Join me on my journey from{" "}
+            <br className={styles.lineBreak} /> Join me on my journey from{" "}
             <a
               href="/blog"
               className={styles.headerLink}
@@ -90,9 +90,10 @@ function HomeHeader() {
               onMouseLeave={handleMouseLeave}
             >
               spaghetti code
-            </a>
-            <br />
-            to mastering front-end development, as I tackle <br />
+            </a>{" "}
+            <br className={styles.lineBreak} />
+            to mastering front-end development, as I tackle{" "}
+            <br className={styles.lineBreak} />
             <a
               href="/work"
               className={styles.headerLink}

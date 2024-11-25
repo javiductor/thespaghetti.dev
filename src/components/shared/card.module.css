@@ -38,7 +38,7 @@
 }
 
 .cardImg {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 30px;
   transition: transform 0.3s ease;

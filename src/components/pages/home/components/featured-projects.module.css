@@ -19,7 +19,13 @@
   max-width: 625px;
 }
 
-/* Responsive breakpoints */
+/* ----- Media Queries ----- */
+@media (min-width: 769px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   .projectsRow {
     gap: 1rem;
@@ -29,14 +35,13 @@
   .projectCard {
     min-width: 100%;
   }
+
+  .container {
+    width: 90%;
+  }
 }
 
-/* For very small screens */
 @media (max-width: 480px) {
-  .container {
-    padding: 4rem 1rem 2rem 1rem;
-  }
-
   .projectsRow {
     gap: 1.5rem;
     margin-bottom: 1.5rem;

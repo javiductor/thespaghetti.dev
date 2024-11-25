@@ -15,3 +15,32 @@
   height: 3px;
   background-color: var(--color-text);
 }
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .dividerContainer {
+    padding: 0px 20px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .dividerContainer {
+    padding: 0px 20px;
+  }
+}
+
+/*  - large phones */
+@media (min-width: 800px) {
+  .dividerContainer {
+    padding: 0px 20px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .dividerContainer {
+    padding: 0px 50px;
+  }
+}
