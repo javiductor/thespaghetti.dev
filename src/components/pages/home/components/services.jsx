@@ -9,33 +9,32 @@ const Services = () => {
         withBorder={true}
         number="01"
         heading="WEB DEVELOPMENT"
-        description1="I specialise in building high-performance website with component based architectures. My development approach prioritises clean code and efficient functionality without compromising on the beautiful design."
-        description2="I create responsive solutions that can handle complex logic while still maintaining fast load times and seamless user interactions. "
+        description1="Transform your digital presence with web solutions that prioritise both performance and polish. I specialise in building sophisticated, component-based websites using cutting-edge JavaScript frameworks, ensuring your platform is both powerful and future-proof."
+        description2="My development approach combines clean, efficient code with seamless user experiences – delivering websites that load fast, respond instantly and scale effortlessly. From responsive implementations to complex UI/UX features, every line of code is meticulously crafted to enhance both functionality and user engagement, creating digital experiences that truly deliver."
         services={[
           {
             number: "(01)",
-            name: "HTML",
+            name: "Modern JS Frameworks",
             image: "/assets/Portfolio/TTHC.webp",
           },
-
           {
             number: "(02)",
-            name: "CSS",
+            name: "Responsive Web Development",
             image: "/assets/Portfolio/enferm.webp",
           },
           {
             number: "(03)",
-            name: "Vanilla JavaScript",
+            name: "Performance Optimization",
             image: "/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
-            name: "React JS",
+            name: "Version Control & Deployment",
             image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",
-            name: "TypeScript",
+            name: "UI/UX Implementation",
             image: "/assets/Portfolio/TTHC.webp",
           },
         ]}
@@ -44,35 +43,33 @@ const Services = () => {
         withBorder={true}
         number="02"
         heading="BRANDING & VISION"
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-        With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
+        description1="With over 7 years of expertise in brand development, I transform businesses through strategic design thinking and clean, minimal aesthetics. From crafting distinctive logos and comprehensive brand identities to developing compelling pitch decks and strategic messaging, I offer a complete suite of branding solutions that help businesses establish their unique market position."
+        description2="My approach combines thoughtful copywriting with strategic brand development to create cohesive brand experiences that resonate with your target audience. Whether you're launching a new venture or refreshing an existing brand, I partner with you to create meaningful connections that drive business growth and lasting impact."
         services={[
           {
             number: "(01)",
-            name: "HTML",
+            name: "Logo Design",
             image: "/assets/Portfolio/enferm.webp",
           },
 
           {
             number: "(02)",
-            name: "CSS",
+            name: "Overall branding",
             image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(03)",
-            name: "Vanilla JavaScript",
+            name: "Deck Design",
             image: "/assets/Portfolio/mrp.webp",
           },
           {
             number: "(04)",
-            name: "React JS",
+            name: "Branding strategy",
             image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",
-            name: "TypeScript",
+            name: "Copywritting",
             image: "/assets/Portfolio/TTHC.webp",
           },
         ]}
@@ -81,34 +78,32 @@ const Services = () => {
         withBorder={true}
         number="03"
         heading="WEB DESIGN"
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-        With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
+        description1="I craft thoughtfully structured websites that guide visitors through seamless journeys, leveraging strategic white space to enhance readability and impact. From detailed wireframes to polished UI/UX design, every element is meticulously planned to ensure optimal user engagement across all devices."
+        description2="My comprehensive approach includes thorough architecture planning and cross-browser testing, ensuring your website performs flawlessly on every platform. By combining aesthetic excellence with strategic functionality, I create digital experiences that don't just look beautiful – they drive results and turn visitors into customers."
         services={[
           {
             number: "(01)",
-            name: "HTML",
+            name: "Wireframming",
             image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(02)",
-            name: "CSS",
+            name: "UX/UI Design",
             image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(03)",
-            name: "Vanilla JavaScript",
+            name: "Responsive design",
             image: "/assets/Portfolio/TTHC.webp",
           },
           {
             number: "(04)",
-            name: "React JS",
+            name: "Architecture and navigation planning",
             image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",
-            name: "TypeScript",
+            name: "Cross browser testing",
             image: "/assets/Portfolio/TTHC.webp",
           },
         ]}

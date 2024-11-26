@@ -5,7 +5,7 @@ import styles from "./featured-projects.module.css";
 const FeaturedProjects = () => {
   const projects = [
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC-small.webp",
       altDescription: "Henley Spanish Centre Portfolio",
       category: ["CSS", "HTML", "React JS"],
       heading: "Henley Spanish Centre",
@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
       link: "/work/mrp",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC-small.webp",
       altDescription: "Torres Heights Portfolio",
       category: ["Web Design"],
       heading: "Torres Heights",

@@ -7,12 +7,18 @@ const AboutMe = () => {
       <div className={styles.aboutContainer}>
         <div className={styles.aboutInfo}>
           <p className={styles.aboutDescription}>
-            Most of my designs are not just about aesthetics, but about
-            developing logical, scalable design systems that are precisely
-            tailored to the web and app application. With a strong focus on UI
-            design and systemic design, I aim to create elements and modules
-            that are responsive, flexible and above all functional and
-            performant.
+            From nearly a decade immersed in marketing and design, I recently
+            embraced an exhilarating new challenge: web development. What began
+            with courses and small projects has evolved into a passionate
+            pursuit of coding excellence. While I'm still early in my
+            development journey, I've already progressed from wrestling with
+            spaghetti code to crafting clean, thoughtful solutions.
+            <br />
+            <br /> Each day brings new learning opportunities, and I'm amazed by
+            how far I've come – already taking on client projects and building
+            real-world applications. My background in design and marketing gives
+            me a unique perspective, allowing me to create solutions that are
+            both technically sound and visually compelling.
           </p>
           <h3 className={styles.aboutHeading}>Client Collabortations</h3>
           <div className={styles.clientList}>
