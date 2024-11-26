@@ -70,3 +70,46 @@
   border-radius: 50%;
   margin-right: 30px;
 }
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .HeaderContainer {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 30px 50px 30px;
+  }
+
+  .HeaderInfo {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .HeaderContainer {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 30px 50px 30px;
+  }
+
+  .HeaderInfo {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .HeaderContainer {
+    flex-direction: row;
+    gap: 100px;
+    margin: 50px 50px 100px 50px;
+  }
+
+  .HeaderInfo {
+    flex-direction: row;
+    gap: 100px;
+  }
+}

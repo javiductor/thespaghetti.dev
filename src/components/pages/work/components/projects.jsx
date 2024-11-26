@@ -9,36 +9,27 @@ const Projects = () => {
       altDescription: "Torres Heights Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Henley Spanish Centre",
+      link: "/work/henley-spanish-centre",
     },
     {
       thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "The Spaghetti Dev Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Thespaghetti.dev",
+      link: "/work/spaghetti",
     },
     {
       thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Three",
       category: ["Web Design", "Branding & Vision"],
       heading: "mrp",
+      link: "/work/mrp",
     },
     {
       thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Four",
       category: ["Web Design", "Branding & Vision"],
-      heading: "The Torres Heights",
-    },
-    {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
-      altDescription: "Project Four",
-      category: ["Web Design", "Branding & Vision"],
-      heading: "enferm.io",
-    },
-    {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
-      altDescription: "Project Four",
-      category: ["Web Design", "Branding & Vision"],
-      heading: "NovaFlip",
+      link: "/work/torres-heights",
     },
   ];
 
@@ -56,6 +47,7 @@ const Projects = () => {
                 altDescription={project.altDescription}
                 category={project.category}
                 heading={project.heading}
+                link={project.link}
               />
             </div>
           ))}

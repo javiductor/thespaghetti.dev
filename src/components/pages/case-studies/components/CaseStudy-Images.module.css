@@ -21,3 +21,36 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+/* -------------- Media Queries ---------------------- */
+/* Extra small (xs) */
+@media (max-width: 575.98px) {
+  .ImageContainer {
+    padding: 30px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .CaseStudyImg {
+    width: 100%;
+  }
+}
+
+/* - most phones & small ipads*/
+@media (min-width: 576px) {
+  .CaseStudyImg {
+    width: 48%;
+  }
+}
+
+/* Extra large (xl) */
+@media (min-width: 1200px) {
+  .ImageContainer {
+    padding: 50px;
+  }
+
+  .CaseStudyImg {
+    width: 48%;
+  }
+}

@@ -31,7 +31,7 @@ const Services = () => {
           {
             number: "(04)",
             name: "React JS",
-            image: "/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",
@@ -68,7 +68,7 @@ const Services = () => {
           {
             number: "(04)",
             name: "React JS",
-            image: "/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",
@@ -104,7 +104,7 @@ const Services = () => {
           {
             number: "(04)",
             name: "React JS",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/Novaflip.webp",
           },
           {
             number: "(05)",

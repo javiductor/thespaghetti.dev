@@ -35,13 +35,13 @@
   border-radius: 20px;
   border: none;
   background-color: none;
-  color: var(--color-text);
-  border: 2px solid rgb(from var(--color-text) r g b / 0.5);
+  color: #f0f1f6;
+  border: 2px solid rgb(from #f0f1f6 r g b / 0.5);
 }
 
 .title {
   margin-bottom: 1rem;
-  color: var(--color-text);
+  color: #f0f1f6;
 }
 
 .contentContainer {
@@ -114,6 +114,10 @@
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
+}
+
+.description {
+  color: #f0f1f6;
 }
 
 .description {

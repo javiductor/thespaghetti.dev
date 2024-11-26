@@ -1,16 +1,22 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
 
 const SocialMediaIcons = () => {
   const socialLinks = [
     {
       icon: FaInstagram,
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/javier_ductor/",
       label: "Instagram",
     },
     {
+      icon: FaBluesky,
+      url: "https://bsky.app/profile/spaghettidev.bsky.social",
+      label: "Bluesky",
+    },
+    {
       icon: FaLinkedin,
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/javier-ductor-peters-divi-website-designer/",
       label: "LinkedIn",
     },
   ];

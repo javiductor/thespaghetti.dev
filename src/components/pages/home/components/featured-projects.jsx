@@ -12,7 +12,7 @@ const FeaturedProjects = () => {
       link: "/work/henley-spanish-centre",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/spaghetti.jpg",
       altDescription: "The Spaghetti Dev Portfolio",
       category: ["CSS", "HTML", "React JS"],
       heading: "Thespaghetti.dev",

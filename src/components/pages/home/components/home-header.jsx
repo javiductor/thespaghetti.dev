@@ -42,8 +42,10 @@ function HomeHeader() {
   const handleMouseEnterSpaghettiCode = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
-      "/assets/spaghetti/home-code.webp",
-      "/assets/spaghetti/home-code-1.webp",
+      "/assets/spaghetti/code-1.webp",
+      "/assets/spaghetti/code-2.webp",
+      "/assets/spaghetti/code-3.webp",
+      "/assets/spaghetti/code-4.webp",
     ];
 
     setHovered({
