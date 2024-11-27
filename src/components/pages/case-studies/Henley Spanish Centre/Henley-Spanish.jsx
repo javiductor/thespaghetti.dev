@@ -17,8 +17,7 @@ const HenleySpanish = () => {
       <CaseStudyHeader
         title="Henley Spanish Centre"
         description={[
-          "Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.",
-          "With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant.",
+          "When The Henley Spanish Centre approached me in September 2024, they were ready to transform their digital identity. Their mission? To pivot from a traditional face-to-face language school to a modern online learning hub. The challenge was clear: create a lightning-fast, mobile-optimised website that would showcase their virtual classroom experience and position them as leaders in online Spanish education.",
         ]}
         heading="Services"
         services={[
@@ -27,36 +26,33 @@ const HenleySpanish = () => {
           { name: "Web Development" },
         ]}
         imgSrc={"/assets/Portfolio/TTHC.webp"}
-        imgAlt={"Torres Heights Mockup"}
+        imgAlt={"Henley Spanish Mockup"}
         button="https://www.henelyspanishcentre.co.uk"
       />
       <Divider header={"About the Project"} />
       <Service
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-      With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
-        heading2="Client Specificatoins"
+        description1="I designed the solution around a scalable, component-based architecture – ensuring both visual consistency and future growth potential. By strategically reusing elements throughout the site, we achieved a cohesive user experience while building a foundation that could easily evolve with their expanding online offerings."
+        description2="The branding and design of the website also needed a revamp. Highlighting the online aspect of the business whilst keeping a minimalist approach to both the brand and the design."
         services={[
           {
             number: "(01)",
-            name: "Henley Spanish Centre",
+            name: "New branding and long term vision",
           },
           {
             number: "(02)",
-            name: "mrp",
+            name: "A design that highlights online learning",
           },
           {
             number: "(03)",
-            name: "Torres Heights",
+            name: "Website optimised for speed",
           },
           {
             number: "(04)",
-            name: "enferm.io",
+            name: "SEO optimised website",
           },
           {
             number: "(05)",
-            name: "NovaFlip",
+            name: "Good user experience",
           },
         ]}
       />

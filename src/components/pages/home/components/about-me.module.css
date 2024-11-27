@@ -19,6 +19,10 @@
   height: auto;
 }
 
+.clientList {
+  margin-top: 40px;
+}
+
 .clientList li,
 .clientList ul {
   color: var(--color-text);

@@ -29,6 +29,7 @@ const Projects = () => {
       thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Project Four",
       category: ["Web Design", "Branding & Vision"],
+      heading: "Torres Heights",
       link: "/work/torres-heights",
     },
   ];
@@ -60,6 +61,7 @@ const Projects = () => {
                 altDescription={project.altDescription}
                 category={project.category}
                 heading={project.heading}
+                link={project.link}
               />
             </div>
           ))}

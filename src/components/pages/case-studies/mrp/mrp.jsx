@@ -17,46 +17,42 @@ const Mrp = () => {
       <CaseStudyHeader
         title="mrp"
         description={[
-          "Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.",
-          "With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant.",
+          "mrp approached me wanting their branding to reflect their ambition to become a leading healthcare staffing provider in the UK market. With this objective in mind, my task was to design and create a brand and website that showcased the strong connections between staff and candidates, while also highlighting the modern and efficient nature of their processes.",
         ]}
         heading="Services"
         services={[
           { name: "Web design" },
-          { name: "Branding" },
-          { name: "Web Development" },
+          { name: "Branding & Vision" },
+          { name: "CRM Integration" },
         ]}
-        imgSrc={"/assets/Portfolio/TTHC.webp"}
-        imgAlt={"Torres Heights Mockup"}
-        button="https://www.henelyspanishcentre.co.uk"
+        imgSrc={"/assets/Portfolio/mrp.webp"}
+        imgAlt={"mrp Mockup"}
+        button="https://www.medicalresourcepartners.co.uk"
       />
       <Divider header={"About the Project"} />
       <Service
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-      With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
-        heading2="Client Specificatoins"
+        description1="Over the course of a couple of years, I worked on various projects, including a comprehensive rebranding, website redesign, content creation, and the automation of mrp’s candidate onboarding process."
+        description2="The idea behind the re-branding was to highlight the connection between the mrp team, candidates, and clients. This was achieved by incorporating visuals of arrows coming together to form a plus sign, symbolizing the concept of mrp + you, the candidate or client."
         services={[
           {
             number: "(01)",
-            name: "Henley Spanish Centre",
+            name: "Candidate Onboarding Process",
           },
           {
             number: "(02)",
-            name: "mrp",
+            name: "Responsive Design",
           },
           {
             number: "(03)",
-            name: "Torres Heights",
+            name: "CRM integration",
           },
           {
             number: "(04)",
-            name: "enferm.io",
+            name: "Bespoke Design and Content",
           },
           {
             number: "(05)",
-            name: "NovaFlip",
+            name: "New branding and strategy",
           },
         ]}
       />

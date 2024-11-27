@@ -20,12 +20,11 @@ const AboutMe = () => {
             me a unique perspective, allowing me to create solutions that are
             both technically sound and visually compelling.
           </p>
-          <h3 className={styles.aboutHeading}>Client Collabortations</h3>
           <div className={styles.clientList}>
             <ul>
-              <li>Henley Spanish Centre</li>
-              <li>mrp</li>
-              <li>Torres Heights</li>
+              <li>Web Development</li>
+              <li>Web Design</li>
+              <li>Branding & Vision</li>
             </ul>
           </div>
         </div>

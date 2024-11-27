@@ -69,9 +69,7 @@ const Menu = function () {
             </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => setIsOpen(false)}>
-              contact
-            </Link>
+            <a href="mailto:javi@theatomlab.co.uk">contact</a>
           </li>
           <li className={styles.toggleItem}>
             <button

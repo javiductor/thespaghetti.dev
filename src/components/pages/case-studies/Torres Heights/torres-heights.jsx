@@ -17,46 +17,35 @@ const TorresHeights = () => {
       <CaseStudyHeader
         title="Torres Heights"
         description={[
-          "Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.",
-          "With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant.",
+          "The Torres Heights Collection is a real estate development located on the sun-kissed bay of Talamanca, Ibiza. My brief was to create a website tailored to the stunning interior design renders that showcase the property.",
+          "The website takes visitors on a journey through the Ibizan coast and the different areas of the properties. By balancing the visuals with a warm background colour and an asymmetrical layout, I created a sense of exploration and discovery that leaves viewers wanting to see more.",
         ]}
         heading="Services"
-        services={[
-          { name: "Web design" },
-          { name: "Branding" },
-          { name: "Web Development" },
-        ]}
+        services={[{ name: "Web design" }, { name: "Copywritting" }]}
         imgSrc={"/assets/Portfolio/TTHC.webp"}
         imgAlt={"Torres Heights Mockup"}
-        button="https://www.henelyspanishcentre.co.uk"
+        button="https://thetorresheightscollection.com/"
       />
       <Divider header={"About the Project"} />
       <Service
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-      With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
-        heading2="Client Specificatoins"
+        description1="The project was built using the Divi Theme Builder on WordPress as this allowed for a quick and efficient set up. Featured included listing of properties, forms, parallax images and a map section."
+        description2="Once the project was finished I offered a hosting and management service that included regular updates and optimisation."
         services={[
           {
             number: "(01)",
-            name: "Henley Spanish Centre",
+            name: "Luxury and Minimalist Design",
           },
           {
             number: "(02)",
-            name: "mrp",
+            name: " Responsive design",
           },
           {
             number: "(03)",
-            name: "Torres Heights",
+            name: "Copywriting",
           },
           {
             number: "(04)",
-            name: "enferm.io",
-          },
-          {
-            number: "(05)",
-            name: "NovaFlip",
+            name: "Hosting & Management",
           },
         ]}
       />
