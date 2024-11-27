@@ -1,9 +1,14 @@
 import React from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaBluesky } from "react-icons/fa6";
 
 const SocialMediaIcons = () => {
   const socialLinks = [
+    {
+      icon: FaGithub,
+      url: "https://github.com/javiductor",
+      label: "Github",
+    },
     {
       icon: FaInstagram,
       url: "https://www.instagram.com/javier_ductor/",

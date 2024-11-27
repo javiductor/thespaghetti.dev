@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
+import SocialMediaIcons from "./social-media-icons";
 
 const Footer = () => {
   const handleEmailClick = () => {
@@ -28,6 +29,7 @@ const Footer = () => {
         <button onClick={handleEmailClick} className={styles.btnCTA}>
           Hire me!
         </button>
+        <SocialMediaIcons />
       </div>
     </div>
   );

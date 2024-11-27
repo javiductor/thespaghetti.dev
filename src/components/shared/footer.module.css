@@ -73,6 +73,7 @@
   cursor: pointer;
   transition: opacity 0.2s ease;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .btnCTA:hover {
