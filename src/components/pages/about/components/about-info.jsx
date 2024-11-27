@@ -6,11 +6,8 @@ const AboutInfo = () => {
   return (
     <div className={styles.servicesContainer}>
       <Service
-        description1="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application.
-        
-        With a strong focus on UI design and systemic design, I aim to create elements and modules that are responsive, flexible and above all functional and performant."
-        description2="Most of my designs are not just about aesthetics, but about developing logical, scalable design systems that are precisely tailored to the web and app application."
-        heading2="Client Collaborations"
+        description1="After a decade immersed in marketing and digital design, I felt drawn to explore the world of web development. Early 2024 marked the beginning of this journey – starting with CSS and JavaScript fundamentals before discovering my true passion in React JS."
+        description2="This blend of marketing insight, design thinking, and development skills gives me a unique perspective on digital projects. I understand not just how to build solutions, but why they matter – crafting experiences that serve real purpose from initial concept through to final execution."
         services={[
           {
             number: "(01)",
@@ -49,7 +46,7 @@ const AboutInfo = () => {
           { name: "CSS" },
           { name: "Vanilla JavaScript" },
           { name: "React JS" },
-          { name: "Next JS" },
+          { name: "TypeScript" },
           { name: "InDesign" },
           { name: "SEO" },
           { name: "DIVI Builder" },
