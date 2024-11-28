@@ -5,14 +5,14 @@ import styles from "./featured-projects.module.css";
 const FeaturedProjects = () => {
   const projects = [
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC-small.webp",
+      thumbImageSrc: "/assets/Portfolio/henley-spanish.webp",
       altDescription: "Henley Spanish Centre Portfolio",
       category: ["CSS", "HTML", "React JS"],
       heading: "Henley Spanish Centre",
       link: "/work/henley-spanish-centre",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/spaghetti.jpg",
+      thumbImageSrc: "/assets/Portfolio/spaghetti.webp",
       altDescription: "The Spaghetti Dev Portfolio",
       category: ["CSS", "HTML", "React JS"],
       heading: "Thespaghetti.dev",
@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
       link: "/work/mrp",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC-small.webp",
+      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
       altDescription: "Torres Heights Portfolio",
       category: ["Web Design"],
       heading: "Torres Heights",

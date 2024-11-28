@@ -121,7 +121,7 @@
   max-width: 400px;
   max-height: 400px;
   overflow: hidden;
-  margin-top: 70px;
+  margin-top: 85px;
 }
 
 .hoveredImage {
@@ -131,7 +131,7 @@
 
 .serviceItem {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* -------------- Media Queries ---------------------- */

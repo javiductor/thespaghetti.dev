@@ -12,13 +12,13 @@ function HomeHeader() {
   const handleMouseEnterExcitingProjects = (event) => {
     const containerRect = event.currentTarget.getBoundingClientRect();
     const images = [
-      "/assets/Portfolio/TTHC/TTHC-1.webp",
-      "/assets/Portfolio/mrp/mrp-1.webp",
-      "/assets/Portfolio/TTHC/TTHC-2.webp",
-      "/assets/Portfolio/mrp/mrp-2.webp",
-      "/assets/Portfolio/mrp/mrp-3.webp",
-      "/assets/Portfolio/HSC/hsc-1.webp",
-      "/assets/Portfolio/HSC/hsc-2.webp",
+      "/assets/Portfolio/header/header-1.webp",
+      "/assets/Portfolio/header/header-2.webp",
+      "/assets/Portfolio/header/header-3.webp",
+      "/assets/Portfolio/header/header-4.webp",
+      "/assets/Portfolio/header/header-5.webp",
+      "/assets/Portfolio/header/header-6.webp",
+      "/assets/Portfolio/header/header-7.webp",
     ];
 
     setHovered({

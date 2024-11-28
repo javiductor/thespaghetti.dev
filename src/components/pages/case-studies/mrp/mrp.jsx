@@ -6,10 +6,10 @@ import ImageContentBlock from "../components/CaseStudy-Images";
 
 const Mrp = () => {
   const imgData = [
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 1" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 2" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 3" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 4" },
+    { src: "/assets/Portfolio/mrp/mrp-4.webp", alt: "candidate-onboarding" },
+    { src: "/assets/Portfolio/mrp/mrp-5.webp", alt: "process-header" },
+    { src: "/assets/Portfolio/mrp/mrp-6.webp", alt: "clients-header" },
+    { src: "/assets/Portfolio/mrp/mrp-7.webp", alt: "job-board" },
   ];
 
   return (

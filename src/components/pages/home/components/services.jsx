@@ -15,17 +15,17 @@ const Services = () => {
           {
             number: "(01)",
             name: "Modern JS Frameworks",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-dev-2.webp",
           },
           {
             number: "(02)",
             name: "Responsive Web Development",
-            image: "/assets/Portfolio/enferm.webp",
+            image: "/assets/hover/web-dev-1.webp",
           },
           {
             number: "(03)",
             name: "Performance Optimization",
-            image: "/assets/Portfolio/mrp.webp",
+            image: "/assets/hover/web-dev-4.webp",
           },
           {
             number: "(04)",
@@ -35,7 +35,7 @@ const Services = () => {
           {
             number: "(05)",
             name: "UI/UX Implementation",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-dev-3.webp",
           },
         ]}
       />

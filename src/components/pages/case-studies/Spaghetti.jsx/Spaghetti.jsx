@@ -6,10 +6,22 @@ import ImageContentBlock from "../components/CaseStudy-Images";
 
 const Spaghetti = () => {
   const imgData = [
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 1" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 2" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 3" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 4" },
+    {
+      src: "/assets/Portfolio/spaghetti/spaghetti-1.webp",
+      alt: "spaghetti-dev-project-mockup",
+    },
+    {
+      src: "/assets/Portfolio/spaghetti/spaghetti-2.webp",
+      alt: "spaghetti-dev-services-mockup",
+    },
+    {
+      src: "/assets/Portfolio/spaghetti/spaghetti-3.webp",
+      alt: "spaghetti-dev-about-mockup",
+    },
+    {
+      src: "/assets/Portfolio/spaghetti/spaghetti-4.webp",
+      alt: "spaghetti-dev-blog-mockup",
+    },
   ];
 
   return (
@@ -26,7 +38,7 @@ const Spaghetti = () => {
           { name: "Branding" },
           { name: "Web Development" },
         ]}
-        imgSrc={"/assets/Portfolio/spaghetti.jpg"}
+        imgSrc={"/assets/Portfolio/spaghetti.webp"}
         imgAlt={"Spaghetti Dev Mockup"}
       />
       <Divider header={"About the Project"} />

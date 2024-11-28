@@ -5,21 +5,21 @@ import styles from "./projects.module.css";
 const Projects = () => {
   const projects = [
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/henley-spanish.webp",
       altDescription: "Torres Heights Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Henley Spanish Centre",
       link: "/work/henley-spanish-centre",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/spaghetti.webp",
       altDescription: "The Spaghetti Dev Portfolio",
       category: ["CSS", "JSX", "React JS"],
       heading: "Thespaghetti.dev",
       link: "/work/spaghetti",
     },
     {
-      thumbImageSrc: "/assets/Portfolio/TTHC.webp",
+      thumbImageSrc: "/assets/Portfolio/mrp.webp",
       altDescription: "Project Three",
       category: ["Web Design", "Branding & Vision"],
       heading: "mrp",

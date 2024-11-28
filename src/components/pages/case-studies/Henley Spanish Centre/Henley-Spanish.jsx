@@ -6,10 +6,22 @@ import ImageContentBlock from "../components/CaseStudy-Images";
 
 const HenleySpanish = () => {
   const imgData = [
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 1" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 2" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 3" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 4" },
+    {
+      src: "/assets/Portfolio/henley-spanish/henley-spanish-1.webp",
+      alt: "pop-up-menu",
+    },
+    {
+      src: "/assets/Portfolio/henley-spanish/henley-spanish-2.webp",
+      alt: "services-mockup",
+    },
+    {
+      src: "/assets/Portfolio/henley-spanish/henley-spanish-3.webp",
+      alt: "corporate-training-mockup",
+    },
+    {
+      src: "/assets/Portfolio/henley-spanish/henley-spanish-4.webp",
+      alt: "header-mockup",
+    },
   ];
 
   return (
@@ -25,7 +37,7 @@ const HenleySpanish = () => {
           { name: "Branding" },
           { name: "Web Development" },
         ]}
-        imgSrc={"/assets/Portfolio/TTHC.webp"}
+        imgSrc={"/assets/Portfolio/henley-spanish.webp"}
         imgAlt={"Henley Spanish Mockup"}
         button="https://www.henelyspanishcentre.co.uk"
       />

@@ -6,10 +6,13 @@ import ImageContentBlock from "../components/CaseStudy-Images";
 
 const TorresHeights = () => {
   const imgData = [
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 1" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 2" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 3" },
-    { src: "/assets/Portfolio/TTHC.webp", alt: "Image 4" },
+    { src: "/assets/Portfolio/TTHC/torres-1.webp", alt: "interiors-mockup" },
+    { src: "/assets/Portfolio/TTHC/torres-2.webp", alt: "apartment-mockup" },
+    {
+      src: "/assets/Portfolio/TTHC/torres-3.webp",
+      alt: "inside-apartment-mockup",
+    },
+    { src: "/assets/Portfolio/TTHC/torres-4.webp", alt: "gardens-mockup" },
   ];
 
   return (
