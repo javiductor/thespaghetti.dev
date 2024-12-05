@@ -6,3 +6,13 @@
 [build]
   publish = "dist"
   command = "npm run build"
+
+[[prerender]]
+path = "/"
+path = "/work"
+path = "/work/henley-spanish-centre"
+path = "/work/mrp"
+path = "/work/spaghetti"
+path = "/work/torres-heights"
+path = "/about"
+path = "/blog"
