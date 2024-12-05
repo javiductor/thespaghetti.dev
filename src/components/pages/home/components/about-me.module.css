@@ -63,12 +63,24 @@
     margin: 100px 100px 100px 300px;
     gap: 100px;
   }
+
+  .aboutImg img {
+    width: 100%;
+  }
 }
 
 /* Extra large (xl) */
 @media (min-width: 1200px) {
+  .aboutImg img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Extra extra large (xxl) */
 @media (min-width: 1400px) {
+  .aboutImg img {
+    width: 90%;
+    height: auto;
+  }
 }

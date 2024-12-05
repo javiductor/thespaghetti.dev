@@ -79,3 +79,14 @@
     gap: 100px;
   }
 }
+
+@media (min-width: 1500px) {
+  .headerContainer {
+    gap: 50px;
+  }
+
+  .headerRight img {
+    width: 80%;
+    margin-left: 100px;
+  }
+}

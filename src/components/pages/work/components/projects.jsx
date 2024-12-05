@@ -49,6 +49,8 @@ const Projects = () => {
                 category={project.category}
                 heading={project.heading}
                 link={project.link}
+                showArrow={false}
+                showHeadingMargin={false}
               />
             </div>
           ))}
@@ -62,6 +64,8 @@ const Projects = () => {
                 category={project.category}
                 heading={project.heading}
                 link={project.link}
+                showArrow={false}
+                showHeadingMargin={false}
               />
             </div>
           ))}
@@ -74,6 +78,8 @@ const Projects = () => {
                 altDescription={project.altDescription}
                 category={project.category}
                 heading={project.heading}
+                showArrow={false}
+                showHeadingMargin={false}
               />
             </div>
           ))}

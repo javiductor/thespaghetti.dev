@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { createDirectus, rest, readItems } from "@directus/sdk";
 import Card from "../../shared/card";
 import styles from "./blogpage.module.css";
+import SEO from "../../SeoHead";
 
 const directus = createDirectus("https://api.theatomlab.co.uk").with(rest());
 
@@ -34,6 +35,12 @@ const Blog = () => {
 
   return (
     <>
+      <SEO
+        title="Blog | The Spaghetti Dev"
+        description="Follow my journey to becoming a fully fledged web developer. This blog is a documented journey of what I have learnt and my thoughts on it all "
+        ogImage="/assets/SEO/seo-blog.webp"
+        canonicalUrl="https://thespaghetti.dev/blog"
+      />
       <div className={styles.Header}>
         <h1>My Blog</h1>
       </div>

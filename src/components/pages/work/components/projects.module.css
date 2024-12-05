@@ -28,25 +28,55 @@
 }
 
 /* -------------- Media Queries ---------------------- */
-/* Extra small (xs) */
-@media (max-width: 575.98px) {
-  .headerContainer {
-    margin: 1rem;
-  }
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
   .projectsRow {
-    margin-left: 1rem;
-    margin-right: 1rem 1rem 0rem 1rem;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .projectCard {
+    min-width: 100%;
+  }
+
+  .container {
+    width: 90%;
   }
 }
 
-/* - most phones & small ipads*/
-@media (min-width: 576px) {
+/* Small laptop (769px - 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
 }
 
-/*  - large phones */
-@media (min-width: 800px) {
+/* Large laptop (1200px - 1799px) */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .container {
+    width: 90%;
+  }
+
+  .projectCard {
+    max-width: 800px;
+  }
 }
 
-/* Extra large (xl) */
-@media (min-width: 1200px) {
+/* Large monitors (1800px and above) */
+@media (min-width: 1800px) {
+  .container {
+    width: 100%;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
+
+  .projectsRow {
+    gap: 4rem;
+  }
+
+  .projectCard {
+    flex: 1;
+    min-width: 600px;
+    max-width: 800px;
+  }
 }

@@ -3,6 +3,7 @@ import CaseStudyHeader from "../components/CaseStudy-Header";
 import Divider from "../../../shared/divider";
 import Service from "../../../shared/service";
 import ImageContentBlock from "../components/CaseStudy-Images";
+import SEO from "../../../SeoHead";
 
 const HenleySpanish = () => {
   const imgData = [
@@ -26,6 +27,12 @@ const HenleySpanish = () => {
 
   return (
     <>
+      <SEO
+        title="Henley Spanish Centre | The Spaghetti Dev"
+        description="The Henley Spanish Centre was looking for a fast, mobile-optimised website that would showcase their virtual classroom exeperience."
+        ogImage="/assets/SEO/seo-henley-spanish.webp"
+        canonicalUrl="https://thespaghetti.dev/work/henley-spanish-centre"
+      />
       <CaseStudyHeader
         title="Henley Spanish Centre"
         description={[

@@ -45,6 +45,8 @@ const FeaturedProjects = () => {
               category={project.category}
               heading={project.heading}
               link={project.link}
+              showArrow={false}
+              showHeadingMargin={false}
             />
           </div>
         ))}
@@ -58,6 +60,8 @@ const FeaturedProjects = () => {
               category={project.category}
               heading={project.heading}
               link={project.link}
+              showArrow={false}
+              showHeadingMargin={false}
             />
           </div>
         ))}

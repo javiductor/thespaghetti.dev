@@ -3,6 +3,7 @@ import CaseStudyHeader from "../components/CaseStudy-Header";
 import Divider from "../../../shared/divider";
 import Service from "../../../shared/service";
 import ImageContentBlock from "../components/CaseStudy-Images";
+import SEO from "../../../SeoHead";
 
 const Mrp = () => {
   const imgData = [
@@ -14,6 +15,12 @@ const Mrp = () => {
 
   return (
     <>
+      <SEO
+        title="mrp | The Spaghetti Dev"
+        description="mrp is a medical recruitment agency that was looking to become a leading healthcare staffing provider in the UK market."
+        ogImage="/assets/SEO/seo-mrp.webp"
+        canonicalUrl="https://thespaghetti.dev/work/mrp"
+      />
       <CaseStudyHeader
         title="mrp"
         description={[

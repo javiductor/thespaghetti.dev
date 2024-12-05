@@ -131,7 +131,6 @@
 
 .serviceItem {
   position: relative;
-  /* cursor: pointer; */
 }
 
 /* -------------- Media Queries ---------------------- */
@@ -208,6 +207,7 @@
 
   .serviceDescription {
     flex-direction: row;
+    gap: 20px;
   }
 
   .serviceDescription p {
@@ -231,4 +231,12 @@
     font-size: 250px;
     margin-bottom: 0px;
   }
+
+  .serviceDescription {
+    gap: 50px;
+  }
+
+  /* .hoveredImageContainer {
+    margin-top: 55px;
+  } */
 }

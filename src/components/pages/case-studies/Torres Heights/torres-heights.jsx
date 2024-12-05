@@ -3,6 +3,7 @@ import CaseStudyHeader from "../components/CaseStudy-Header";
 import Divider from "../../../shared/divider";
 import Service from "../../../shared/service";
 import ImageContentBlock from "../components/CaseStudy-Images";
+import SEO from "../../../SeoHead";
 
 const TorresHeights = () => {
   const imgData = [
@@ -17,6 +18,12 @@ const TorresHeights = () => {
 
   return (
     <>
+      <SEO
+        title="The Torres Heights Collection | The Spaghetti Dev"
+        description="he Torres Heights Collection is a real estate development located on the sun-kissed bay of Talamanca, Ibiza. My brief was to create a website tailored to the stunning interior design renders that showcase the property."
+        ogImage="/assets/SEO/seo-TTHC.webp"
+        canonicalUrl="https://thespaghetti.dev/work/torres-heights"
+      />
       <CaseStudyHeader
         title="Torres Heights"
         description={[

@@ -19,13 +19,7 @@
   max-width: 625px;
 }
 
-/* ----- Media Queries ----- */
-@media (min-width: 769px) {
-  .container {
-    width: 90%;
-  }
-}
-
+/* Mobile (up to 768px) */
 @media (max-width: 768px) {
   .projectsRow {
     gap: 1rem;
@@ -41,9 +35,39 @@
   }
 }
 
-@media (max-width: 480px) {
+/* Small laptop (769px - 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Large laptop (1200px - 1799px) */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .container {
+    width: 90%;
+  }
+
+  .projectCard {
+    max-width: 800px;
+  }
+}
+
+/* Large monitors (1800px and above) */
+@media (min-width: 1800px) {
+  .container {
+    width: 100%;
+    max-width: 3000px;
+    margin: 0 auto;
+  }
+
   .projectsRow {
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    gap: 4rem;
+  }
+
+  .projectCard {
+    flex: 1;
+    min-width: 600px;
+    max-width: 800px;
   }
 }

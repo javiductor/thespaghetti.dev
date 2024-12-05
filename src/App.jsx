@@ -2,6 +2,7 @@ import Menu from "./components/shared/menu.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/shared/theme-context.jsx";
 import CursorBlob from "./components/shared/CursorBlob.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 import "./App.css";
 import "./index.css";
@@ -19,30 +20,32 @@ import HenleySpanish from "./components/pages/case-studies/Henley Spanish Centre
 
 function App() {
   return (
-    <BrowserRouter>
-      <ThemeProvider>
-        <div className="app">
-          <CursorBlob />
-          <Menu />
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogContent />} />
-            <Route path="work/torres-heights" element={<TorresHeights />} />
-            <Route path="work/spaghetti" element={<Spaghetti />} />
-            <Route path="work/mrp" element={<Mrp />} />
-            <Route
-              path="work/henley-spanish-centre"
-              element={<HenleySpanish />}
-            />
-          </Routes>
-          <Footer />
-        </div>
-      </ThemeProvider>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ThemeProvider>
+          <div className="app">
+            <CursorBlob />
+            <Menu />
+            <ScrollToTop />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogContent />} />
+              <Route path="work/torres-heights" element={<TorresHeights />} />
+              <Route path="work/spaghetti" element={<Spaghetti />} />
+              <Route path="work/mrp" element={<Mrp />} />
+              <Route
+                path="work/henley-spanish-centre"
+                element={<HenleySpanish />}
+              />
+            </Routes>
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
 

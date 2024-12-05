@@ -113,3 +113,9 @@
     gap: 100px;
   }
 }
+
+@media (min-width: 1400px) {
+  .HeaderContainer {
+    margin: 50px 100px 100px 100px;
+  }
+}

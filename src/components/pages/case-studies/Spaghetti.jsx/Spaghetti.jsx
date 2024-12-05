@@ -3,6 +3,7 @@ import CaseStudyHeader from "../components/CaseStudy-Header";
 import Divider from "../../../shared/divider";
 import Service from "../../../shared/service";
 import ImageContentBlock from "../components/CaseStudy-Images";
+import SEO from "../../../SeoHead";
 
 const Spaghetti = () => {
   const imgData = [
@@ -26,6 +27,12 @@ const Spaghetti = () => {
 
   return (
     <>
+      <SEO
+        title="The Spaghetti Dev Project | The Spaghetti Dev"
+        description="This is my personal portfolio. A place to display my work both as a developer and a designer. Take a look at how I created the website."
+        ogImage="/assets/SEO/seo-spaghetti.webp"
+        canonicalUrl="https://thespaghetti.dev/work/spaghetti"
+      />
       <CaseStudyHeader
         title="Spaghetti.dev"
         description={[
