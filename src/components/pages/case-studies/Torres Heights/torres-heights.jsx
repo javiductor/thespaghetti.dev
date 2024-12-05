@@ -21,7 +21,7 @@ const TorresHeights = () => {
       <SEO
         title="The Torres Heights Collection | The Spaghetti Dev"
         description="he Torres Heights Collection is a real estate development located on the sun-kissed bay of Talamanca, Ibiza. My brief was to create a website tailored to the stunning interior design renders that showcase the property."
-        ogImage="/assets/SEO/seo-TTHC.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-TTHC.webp"
         canonicalUrl="https://thespaghetti.dev/work/torres-heights"
       />
       <CaseStudyHeader

@@ -18,7 +18,7 @@ const Mrp = () => {
       <SEO
         title="mrp | The Spaghetti Dev"
         description="mrp is a medical recruitment agency that was looking to become a leading healthcare staffing provider in the UK market."
-        ogImage="/assets/SEO/seo-mrp.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-mrp.webp"
         canonicalUrl="https://thespaghetti.dev/work/mrp"
       />
       <CaseStudyHeader

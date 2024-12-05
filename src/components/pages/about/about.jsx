@@ -10,7 +10,7 @@ function About() {
       <SEO
         title="About Me | The Spaghetti Dev"
         description="A front-end developer and digital designer with nearly 10 years experience in digital marketing and web design."
-        ogImage="/assets/SEO/seo-about.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-about.webp"
         canonicalUrl="https://thespaghetti.dev/about"
       />
       <div className="App">

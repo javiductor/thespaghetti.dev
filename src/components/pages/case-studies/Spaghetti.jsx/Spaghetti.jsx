@@ -30,7 +30,7 @@ const Spaghetti = () => {
       <SEO
         title="The Spaghetti Dev Project | The Spaghetti Dev"
         description="This is my personal portfolio. A place to display my work both as a developer and a designer. Take a look at how I created the website."
-        ogImage="/assets/SEO/seo-spaghetti.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-spaghetti.webp"
         canonicalUrl="https://thespaghetti.dev/work/spaghetti"
       />
       <CaseStudyHeader

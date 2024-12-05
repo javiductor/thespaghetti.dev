@@ -12,7 +12,7 @@ function Home() {
       <SEO
         title="Home | The Spaghetti Dev"
         description="Follow my journey as a developer through hands-on projects, coding insights, and real-world experiences. Explore my portfolio and learn alongside me as I navigate the tech world."
-        ogImage="/assets/SEO/seo-home.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-home.webp"
         canonicalUrl="https://thespaghetti.dev"
       />
       <div className="App">

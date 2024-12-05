@@ -30,7 +30,7 @@ const HenleySpanish = () => {
       <SEO
         title="Henley Spanish Centre | The Spaghetti Dev"
         description="The Henley Spanish Centre was looking for a fast, mobile-optimised website that would showcase their virtual classroom exeperience."
-        ogImage="/assets/SEO/seo-henley-spanish.webp"
+        ogImage="https://thespaghetti.dev/assets/SEO/seo-henley-spanish.webp"
         canonicalUrl="https://thespaghetti.dev/work/henley-spanish-centre"
       />
       <CaseStudyHeader
