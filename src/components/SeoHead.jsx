@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "The Spaghetti Dev",
-  description = "Follow my journey as a developer through hands-on projects, coding insights, and real-world experiences. Explore my portfolio and learn alongside me as I navigate the tech world.",
-  ogImage = "/assets/SEO/seo-home.webp",
+  title,
+  description,
+  ogImage,
   canonicalUrl,
   noindex = false,
 }) => {
@@ -18,14 +18,14 @@ const SEO = ({
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={fullImageUrl} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="The Spaghetti Dev" />
       <meta property="og:url" content={canonicalUrl || siteUrl} />
       <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={fullImageUrl} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
 
