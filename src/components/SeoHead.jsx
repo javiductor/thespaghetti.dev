@@ -9,6 +9,9 @@ const SEO = ({
   noindex = false,
 }) => {
   const siteUrl = "https://thespaghetti.dev";
+  const fullImageUrl = ogImage.startsWith("http")
+    ? ogImage
+    : `${siteUrl}${ogImage}`;
 
   return (
     <Helmet>
@@ -19,23 +22,20 @@ const SEO = ({
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="The Spaghetti Dev" />
       <meta property="og:url" content={canonicalUrl || siteUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta
-        property="og:image"
-        content={ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`}
-      />
+      <meta property="og:image" content={fullImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={canonicalUrl || siteUrl} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta
-        name="twitter:image"
-        content={ogImage.startsWith("http") ? ogImage : `${siteUrl}${ogImage}`}
-      />
+      <meta name="twitter:image" content={fullImageUrl} />
 
       {/* Canonical URL */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
