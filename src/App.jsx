@@ -17,13 +17,23 @@ import TorresHeights from "./components/pages/case-studies/Torres Heights/torres
 import Spaghetti from "./components/pages/case-studies/Spaghetti.jsx/Spaghetti.jsx";
 import Mrp from "./components/pages/case-studies/mrp/mrp.jsx";
 import HenleySpanish from "./components/pages/case-studies/Henley Spanish Centre/Henley-Spanish.jsx";
+import SEO from "./components/SeoHead.jsx";
 
 function App() {
+  const helmetContext = {};
+
   return (
-    <HelmetProvider>
+    <HelmetProvider context={helmetContext}>
       <BrowserRouter>
         <ThemeProvider>
           <div className="app">
+            {/* Default SEO tags */}
+            <SEO
+              title="The Spaghetti Dev"
+              description="Follow my journey as a developer through hands-on projects, coding insights, and real-world experiences."
+              ogImage="/assets/SEO/seo-home.webp"
+              canonicalUrl="https://thespaghetti.dev"
+            />
             <CursorBlob />
             <Menu />
             <ScrollToTop />
