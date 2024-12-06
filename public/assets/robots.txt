@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://theatomlab.co.uk/sitemap.xml
+Sitemap: https://thespaghetti.dev/sitemap.xml
