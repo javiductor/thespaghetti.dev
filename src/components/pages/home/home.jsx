@@ -4,8 +4,8 @@ import Services from "./components/services";
 import Divider from "../../shared/divider";
 import FeaturedProjects from "./components/featured-projects";
 import AboutMe from "./components/about-me";
-import SEO from "../../SeoHead";
-import { HelmetProvider } from "react-helmet-async";
+// import SEO from "../../SeoHead";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 
 function Home() {
   return (
@@ -27,7 +27,6 @@ function Home() {
             content="https://thespaghetti.dev/assets/SEO/seo-home.webp"
           />
         </Helmet>
-
         <div className="App">
           <HomeHeader />
           <Divider header="Featured Projects" />
