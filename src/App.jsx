@@ -27,13 +27,6 @@ function App() {
       <BrowserRouter>
         <ThemeProvider>
           <div className="app">
-            {/* Default SEO tags */}
-            <SEO
-              title="The Spaghetti Dev"
-              description="Follow my journey as a developer through hands-on projects, coding insights, and real-world experiences."
-              ogImage="/assets/SEO/seo-home.webp"
-              canonicalUrl="https://thespaghetti.dev"
-            />
             <CursorBlob />
             <Menu />
             <ScrollToTop />
