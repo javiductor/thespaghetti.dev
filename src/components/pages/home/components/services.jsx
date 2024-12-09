@@ -1,6 +1,6 @@
 import React from "react";
 import Service from "/src/components/shared/service";
-import styles from "./services.module.css";
+import styles from "../../../shared/service.module.css";
 
 const Services = () => {
   return (
