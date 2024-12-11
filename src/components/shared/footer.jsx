@@ -27,7 +27,7 @@ const Footer = () => {
       <div className={styles.footerRight}>
         <h3>Looking for a front-end developer?</h3>
         <button onClick={handleEmailClick} className={styles.btnCTA}>
-          Hire me!
+          Let's Talk!
         </button>
         <SocialMediaIcons />
       </div>

@@ -46,7 +46,7 @@ const HenleySpanish = () => {
         ]}
         imgSrc={"/assets/Portfolio/henley-spanish.webp"}
         imgAlt={"Henley Spanish Mockup"}
-        button="https://www.henelyspanishcentre.co.uk"
+        // button="https://www.henelyspanishcentre.co.uk"
       />
       <Divider header={"About the Project"} />
       <Service
