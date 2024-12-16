@@ -25,17 +25,17 @@ const Services = () => {
           {
             number: "(03)",
             name: "Performance Optimization",
-            image: "/assets/hover/web-dev-4.webp",
+            image: "/assets/hover/web-dev-3.webp",
           },
           {
             number: "(04)",
             name: "Version Control & Deployment",
-            image: "/assets/Portfolio/Novaflip.webp",
+            image: "/assets/hover/web-dev-4.webp",
           },
           {
             number: "(05)",
             name: "UI/UX Implementation",
-            image: "/assets/hover/web-dev-3.webp",
+            image: "/assets/hover/web-dev-5.webp",
           },
         ]}
       />
@@ -49,28 +49,28 @@ const Services = () => {
           {
             number: "(01)",
             name: "Logo Design",
-            image: "/assets/Portfolio/enferm.webp",
+            image: "/assets/hover/branding-1.webp",
           },
 
           {
             number: "(02)",
             name: "Overall branding",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/branding-2.webp",
           },
           {
             number: "(03)",
             name: "Deck Design",
-            image: "/assets/Portfolio/mrp.webp",
+            image: "/assets/hover/branding-3.webp",
           },
           {
             number: "(04)",
             name: "Branding strategy",
-            image: "/assets/Portfolio/Novaflip.webp",
+            image: "/assets/hover/branding-4.webp",
           },
           {
             number: "(05)",
             name: "Copywritting",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/branding-5.webp",
           },
         ]}
       />
@@ -84,27 +84,27 @@ const Services = () => {
           {
             number: "(01)",
             name: "Wireframming",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-design-1.webp",
           },
           {
             number: "(02)",
             name: "UX/UI Design",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-dev-5.webp",
           },
           {
             number: "(03)",
             name: "Responsive design",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-dev-1.webp",
           },
           {
             number: "(04)",
             name: "Architecture and navigation planning",
-            image: "/assets/Portfolio/Novaflip.webp",
+            image: "/assets/hover/web-design-2.webp",
           },
           {
             number: "(05)",
             name: "Cross browser testing",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/hover/web-design-3.webp",
           },
         ]}
       />
