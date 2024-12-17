@@ -52,7 +52,7 @@ const generateSitemap = async () => {
     const xml = doc.end({ prettyPrint: true });
 
     // Write directly to current directory
-    const sitemapPath = resolve(__dirname, "sitemap.xml");
+    const sitemapPath = resolve(__dirname, "public/sitemap.xml");
     writeFileSync(sitemapPath, xml);
 
     console.log("Sitemap generated successfully at:", sitemapPath);
