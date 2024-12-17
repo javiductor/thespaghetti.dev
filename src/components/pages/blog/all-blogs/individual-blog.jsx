@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createDirectus, rest, readItems } from "@directus/sdk";
 import { useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import parse from "html-react-parser";
 import styles from "./individual-blog.module.css";
 import CodeDisplay from "./code-display";
@@ -132,57 +133,93 @@ const BlogContent = () => {
     );
   }
 
-  return (
-    <div className={styles.blogContainer}>
-      <div className={styles.headerContainer}>
-        {blog.Header_Img && (
-          <>
-            <img
-              src={`https://api.theatomlab.co.uk/assets/${blog.Header_Img}`}
-              alt={blog.Title}
-              className={styles.headerImage}
-            />
-            <div className={styles.overlay}>
-              {formatTitle(blog.Title)}
-              <p className={styles.description}>{blog.description_meta}</p>
-              <div className={styles.categoryContainer}>
-                {Array.isArray(blog.Categories) &&
-                  blog.Categories.map((category, index) => (
-                    <span key={index} className={styles.category}>
-                      {category}
-                    </span>
-                  ))}
-              </div>
-            </div>
-          </>
-        )}
-      </div>
+  const canonicalUrl = `https://thespaghetti.dev/blog/${slug}`;
+  const ogImageUrl = blog.Header_Img
+    ? `https://api.theatomlab.co.uk/assets/${blog.Header_Img}`
+    : "https://thespaghetti.dev/assets/SEO/seo-blog.webp";
 
-      <div className={styles.contentContainer}>
-        <div className={styles.content}>
-          {contentBlocks.map((block) => renderContent(block))}
+  return (
+    <>
+      <Helmet>
+        <title>{`${blog.Title} | The Spaghetti Dev`}</title>
+        <meta name="description" content={blog.description_meta} />
+        <meta name="author" content={blog.Author} />
+        <meta name="keywords" content={blog.Categories?.join(", ")} />
+
+        {/* Open Graph tags */}
+        <meta property="og:title" content={blog.Title} />
+        <meta property="og:description" content={blog.description_meta} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
+
+        {/* Twitter Card tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={blog.Title} />
+        <meta name="twitter:description" content={blog.description_meta} />
+        <meta name="twitter:image" content={ogImageUrl} />
+
+        {/* Article specific metadata */}
+        <meta property="article:published_time" content={blog.date_created} />
+        <meta property="article:author" content={blog.Author} />
+        {blog.Categories?.map((category) => (
+          <meta property="article:tag" content={category} key={category} />
+        ))}
+
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
+
+      <div className={styles.blogContainer}>
+        <div className={styles.headerContainer}>
+          {blog.Header_Img && (
+            <>
+              <img
+                src={`https://api.theatomlab.co.uk/assets/${blog.Header_Img}`}
+                alt={blog.Title}
+                className={styles.headerImage}
+              />
+              <div className={styles.overlay}>
+                {formatTitle(blog.Title)}
+                <p className={styles.description}>{blog.description_meta}</p>
+                <div className={styles.categoryContainer}>
+                  {Array.isArray(blog.Categories) &&
+                    blog.Categories.map((category, index) => (
+                      <span key={index} className={styles.category}>
+                        {category}
+                      </span>
+                    ))}
+                </div>
+              </div>
+            </>
+          )}
         </div>
 
-        <div className={styles.authorContainer}>
-          <div className={styles.authorContainerInfo}>
-            {blog.Author_Img && (
-              <img
-                src={`https://api.theatomlab.co.uk/assets/${blog.Author_Img}`}
-                alt={blog.Author || "Author"}
-                className={styles.authorImage}
-              />
-            )}
-            <div className={styles.authorInfo}>
-              {blog.Author && <h5>Written by {blog.Author}</h5>}
-              {blog.Author_Role && (
-                <p className={styles.authorRole}>{blog.Author_Role}</p>
+        <div className={styles.contentContainer}>
+          <div className={styles.content}>
+            {contentBlocks.map((block) => renderContent(block))}
+          </div>
+
+          <div className={styles.authorContainer}>
+            <div className={styles.authorContainerInfo}>
+              {blog.Author_Img && (
+                <img
+                  src={`https://api.theatomlab.co.uk/assets/${blog.Author_Img}`}
+                  alt={blog.Author || "Author"}
+                  className={styles.authorImage}
+                />
               )}
-              <SocialMediaIcons className={styles.socialIcons} />
+              <div className={styles.authorInfo}>
+                {blog.Author && <h5>Written by {blog.Author}</h5>}
+                {blog.Author_Role && (
+                  <p className={styles.authorRole}>{blog.Author_Role}</p>
+                )}
+                <SocialMediaIcons className={styles.socialIcons} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

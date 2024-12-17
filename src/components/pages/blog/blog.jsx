@@ -13,7 +13,11 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await directus.request(readItems("BlogPost"));
+        const response = await directus.request(
+          readItems("BlogPost", {
+            sort: ["-date_created"],
+          })
+        );
         if (Array.isArray(response)) {
           setBlogs(response);
         } else if (response && Array.isArray(response.data)) {
