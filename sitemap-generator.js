@@ -9,7 +9,17 @@ const __dirname = dirname(__filename);
 
 const directus = createDirectus("https://api.theatomlab.co.uk").with(rest());
 
-const staticRoutes = ["/", "/about", "/contact", "/blog"];
+const staticRoutes = [
+  "/",
+  "/about",
+  "/contact",
+  "/blog",
+  "/work",
+  "/work/henley-spanish-centre",
+  "/work/mrp",
+  "/work/spaghetti",
+  "/work/torres-heights",
+];
 
 const getBlogPosts = async () => {
   try {
@@ -51,7 +61,6 @@ const generateSitemap = async () => {
 
     const xml = doc.end({ prettyPrint: true });
 
-    // Write directly to current directory
     const sitemapPath = resolve(__dirname, "public/sitemap.xml");
     writeFileSync(sitemapPath, xml);
 
