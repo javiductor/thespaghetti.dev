@@ -2,7 +2,7 @@ import { createDirectus, rest, readItems } from "@directus/sdk";
 import { create } from "xmlbuilder2";
 import { writeFileSync } from "fs";
 import { fileURLToPath } from "url";
-import { dirname, join } from "path";
+import { dirname, join, resolve } from "path";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -51,10 +51,11 @@ const generateSitemap = async () => {
 
     const xml = doc.end({ prettyPrint: true });
 
-    const distPath = join(__dirname, "dist");
-    writeFileSync(join(distPath, "sitemap.xml"), xml);
+    // Write directly to current directory
+    const sitemapPath = resolve(__dirname, "sitemap.xml");
+    writeFileSync(sitemapPath, xml);
 
-    console.log("Sitemap generated successfully!");
+    console.log("Sitemap generated successfully at:", sitemapPath);
   } catch (error) {
     console.error("Error generating sitemap:", error);
   }
