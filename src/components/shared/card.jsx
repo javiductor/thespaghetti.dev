@@ -28,7 +28,6 @@ const Card = ({
           alt={altDescription}
           width={imageWidth}
           height={imageHeight}
-          loading="lazy"
         />
       )}
       <div className={styles.categoryContainer}>
