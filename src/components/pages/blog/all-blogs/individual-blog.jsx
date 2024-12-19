@@ -12,7 +12,6 @@ const directus = createDirectus("https://api.theatomlab.co.uk").with(rest());
 const BlogContent = () => {
   const [blog, setBlog] = useState(null);
   const [contentBlocks, setContentBlocks] = useState([]);
-  const [relatedPosts, setRelatedPosts] = useState([]);
   const [error, setError] = useState(null);
   const { slug } = useParams();
 
@@ -46,30 +45,6 @@ const BlogContent = () => {
 
         if (Array.isArray(contentBlocksResponse)) {
           setContentBlocks(contentBlocksResponse);
-        }
-
-        // Fetch related posts with improved error handling
-        try {
-          const relatedResponse = await directus.request(
-            readItems("BlogPost", {
-              filter: {
-                Categories: {
-                  _intersects: currentBlog.Categories,
-                },
-                slug: {
-                  _neq: slug,
-                },
-              },
-              limit: 4,
-            })
-          );
-
-          if (Array.isArray(relatedResponse)) {
-            setRelatedPosts(relatedResponse);
-          }
-        } catch (relatedError) {
-          console.error("Error fetching related posts:", relatedError);
-          setRelatedPosts([]);
         }
       } catch (error) {
         console.error("Error fetching blog content:", error);
