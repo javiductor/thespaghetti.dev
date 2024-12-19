@@ -21,6 +21,7 @@ const BlogContent = () => {
       try {
         setError(null);
 
+        // Fetch main blog post
         const blogResponse = await directus.request(
           readItems("BlogPost", {
             filter: { slug: { _eq: slug } },
@@ -35,6 +36,7 @@ const BlogContent = () => {
         const currentBlog = blogResponse[0];
         setBlog(currentBlog);
 
+        // Fetch content blocks
         const contentBlocksResponse = await directus.request(
           readItems("Content_Blocks", {
             filter: { Blog_Post: { _eq: currentBlog.id } },
@@ -46,18 +48,28 @@ const BlogContent = () => {
           setContentBlocks(contentBlocksResponse);
         }
 
-        const relatedResponse = await directus.request(
-          readItems("BlogPost", {
-            filter: {
-              Categories: { _has: currentBlog.Categories },
-              slug: { _neq: slug },
-            },
-            limit: 4,
-          })
-        );
+        // Fetch related posts with improved error handling
+        try {
+          const relatedResponse = await directus.request(
+            readItems("BlogPost", {
+              filter: {
+                Categories: {
+                  _intersects: currentBlog.Categories,
+                },
+                slug: {
+                  _neq: slug,
+                },
+              },
+              limit: 4,
+            })
+          );
 
-        if (Array.isArray(relatedResponse)) {
-          setRelatedPosts(relatedResponse);
+          if (Array.isArray(relatedResponse)) {
+            setRelatedPosts(relatedResponse);
+          }
+        } catch (relatedError) {
+          console.error("Error fetching related posts:", relatedError);
+          setRelatedPosts([]);
         }
       } catch (error) {
         console.error("Error fetching blog content:", error);
