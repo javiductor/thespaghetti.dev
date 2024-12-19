@@ -49,11 +49,11 @@
   display: flex;
   margin: 100px 50px;
   margin-bottom: 2rem;
-  gap: 50px;
+  gap: 20px;
 }
 
 .content {
-  flex: 60%;
+  flex: 70%;
   margin: 0px 50px;
 }
 
@@ -74,7 +74,7 @@
   top: 150px;
   display: flex;
   flex-direction: column;
-  flex: 40%;
+  flex: 30%;
   gap: 30px;
   margin-top: 0px;
   max-height: 80vh;
