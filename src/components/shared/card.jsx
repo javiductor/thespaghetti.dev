@@ -14,6 +14,7 @@ const Card = ({
   showHeadingMargin = true,
   imageWidth = 556,
   imageHeight = 417,
+  isFirstImage = false,
 }) => {
   const containerClassName = classNames(styles.cardContainer, {
     [styles.headingMarginAnimation]: showHeadingMargin,
@@ -28,6 +29,7 @@ const Card = ({
           alt={altDescription}
           width={imageWidth}
           height={imageHeight}
+          fetchpriority={isFirstImage ? "high" : "auto"}
         />
       )}
       <div className={styles.categoryContainer}>
