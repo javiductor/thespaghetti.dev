@@ -12,6 +12,8 @@ const Card = ({
   link,
   showArrow = true,
   showHeadingMargin = true,
+  imageWidth = 556,
+  imageHeight = 417,
 }) => {
   const containerClassName = classNames(styles.cardContainer, {
     [styles.headingMarginAnimation]: showHeadingMargin,
@@ -24,6 +26,9 @@ const Card = ({
           className={styles.cardImg}
           src={thumbImageSrc}
           alt={altDescription}
+          width={imageWidth}
+          height={imageHeight}
+          loading="lazy"
         />
       )}
       <div className={styles.categoryContainer}>
