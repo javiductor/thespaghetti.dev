@@ -47,7 +47,6 @@ const AboutInfo = () => {
           { name: "Vanilla JavaScript" },
           { name: "React JS" },
           { name: "TypeScript" },
-          { name: "InDesign" },
           { name: "SEO" },
           { name: "DIVI Builder" },
           { name: "Adobe XD" },
