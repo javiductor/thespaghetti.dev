@@ -181,7 +181,7 @@
 
 /* ---------------- Media Queries ---------------- */
 
-@media (max-width: 1300px) {
+@media (max-width: 1250px) {
   .menuContainer {
     padding: 20px;
     align-items: flex-start;
