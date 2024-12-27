@@ -12,31 +12,31 @@ const AboutInfo = () => {
           {
             number: "(01)",
             name: "Henley Spanish Centre",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/henley-spanish.webp",
             position: { top: "100", left: "300" },
           },
           {
             number: "(02)",
             name: "mrp",
-            image: "/assets/Portfolio/enferm.webp",
+            image: "/assets/Portfolio/mrp.webp",
             position: { top: "200", left: "500" },
           },
           {
             number: "(03)",
             name: "Torres Heights",
-            image: "/assets/Portfolio/mrp.webp",
+            image: "/assets/Portfolio/TTHC.webp",
             position: { top: "300", left: "700" },
           },
           {
             number: "(04)",
             name: "enferm.io",
-            image: "/assets/Portfolio/NovaFlip.webp",
+            image: "/assets/Portfolio/enferm.webp",
             position: { top: "400", left: "200" },
           },
           {
             number: "(05)",
             name: "NovaFlip",
-            image: "/assets/Portfolio/TTHC.webp",
+            image: "/assets/Portfolio/Novaflip.webp",
             position: { top: "500", left: "400" },
           },
         ]}
@@ -53,6 +53,9 @@ const AboutInfo = () => {
           { name: "Adobe Illustrator" },
           { name: "Adobe Photoshop" },
           { name: "Adobe InDesign" },
+          { name: "GitHub" },
+          { name: "GA4" },
+          { name: "Google Search Console" },
         ]}
       />
     </div>

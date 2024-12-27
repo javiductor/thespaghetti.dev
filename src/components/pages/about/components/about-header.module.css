@@ -75,7 +75,7 @@
 @media (min-width: 1200px) {
   .headerContainer {
     flex-direction: row;
-    margin: 100px;
+    margin: 50px;
     gap: 100px;
   }
 }
