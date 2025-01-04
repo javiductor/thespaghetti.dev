@@ -29,7 +29,12 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.aboutImg}>
-          <img src="/assets/Javi.webp" alt="personal-picture" />
+          <img
+            src="/assets/Javi.webp"
+            alt="personal-picture"
+            width={480}
+            height={480}
+          />
         </div>
       </div>
     </>
