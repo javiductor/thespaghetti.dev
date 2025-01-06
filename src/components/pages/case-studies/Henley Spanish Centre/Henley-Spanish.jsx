@@ -34,7 +34,7 @@ const HenleySpanish = () => {
         canonicalUrl="https://thespaghetti.dev/work/henley-spanish-centre"
       />
       <CaseStudyHeader
-        title="Henley Spanish Centre"
+        title="Henley Spanish Centre - WIP"
         description={[
           "When The Henley Spanish Centre approached me in September 2024, they were ready to transform their digital identity. Their mission? To pivot from a traditional face-to-face language school to a modern online learning hub. The challenge was clear: create a lightning-fast, mobile-optimised website that would showcase their virtual classroom experience and position them as leaders in online Spanish education.",
         ]}
