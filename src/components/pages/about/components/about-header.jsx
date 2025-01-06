@@ -11,10 +11,12 @@ const AboutHeader = () => {
             <br /> A front-end developer <br />
             and digital designer.
           </h1>
-          <button className={styles.mainBtn}>
-            <span className={styles.circle}></span>
-            Download Resume
-          </button>{" "}
+          <a href="/assets/CV/cv.pdf" download>
+            <button className={styles.mainBtn}>
+              <span className={styles.circle}></span>
+              Download Resume
+            </button>
+          </a>
         </div>
         <div className={styles.headerRight}>
           <img src="/assets/Javi.webp" alt="personal-headshot" />
